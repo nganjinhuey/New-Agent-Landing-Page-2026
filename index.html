@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WeKongsi – Community-Driven Medical Cost-Sharing | Affordable Healthcare for Malaysians</title>
+  <meta name="description" content="WeKongsi is a community-driven Medical Cost-Sharing Program making healthcare support more accessible and affordable for all Malaysians. Up to RM1 Million annual medical support." />
+  <meta name="keywords" content="WeKongsi, medical cost sharing, healthcare Malaysia, affordable medical protection, community healthcare" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=20260616k" />
+</head>
+<body>
+
+  <!-- ====== NAVBAR ====== -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="nav-logo"><img src="wekongsilogo.jpg" alt="WeKongsi" class="nav-logo-img" /></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#why-choose">Benefits</a></li>
+        <li><a href="#plans">Plans</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#cta-final" class="nav-cta-btn">Join Now</a></li>
+      </ul>
+      <button class="nav-hamburger" id="navHamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <!-- ====== HERO ====== -->
+  <section class="hero" id="hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-inner">
+      <h1 class="hero-headline animate-fade-up" data-delay="80">Struggling to Find <span class="hl">Affordable</span><br /><span class="hl">Medical Protection?</span></h1>
+      <div class="hero-rotator animate-fade-up" data-delay="160">
+        <span class="hero-rotate-text">I don't think it's important right now.</span>
+      </div>
+      <p class="hero-subheadline animate-fade-up" data-delay="240">These are the everyday doubts that leave Malaysians unprotected. WeKongsi makes medical cost-sharing simple, transparent and genuinely affordable.</p>
+      <div class="hero-ctas animate-fade-up" data-delay="320">
+        <a href="#cta-final" class="btn btn-primary">Join WeKongsi Today <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        <a href="#how-it-works" class="btn btn-ghost-light">Learn How It Works</a>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator"><div class="scroll-dot"></div></div>
+  </section>
+
+  <!-- ====== REALITY ====== -->
+  <section class="reality" id="reality">
+    <div class="container">
+      <!-- TODO(client): The 78% / 22% figures are illustrative — replace with a verified, sourced statistic before publishing. -->
+      <div class="reality-card animate-fade-up">
+        <div class="reality-top">
+          <div class="reality-card-text">
+            <span class="tag tag-alert">The Reality</span>
+            <h2 class="reality-stat-title">78% of Malaysians are <span class="alarm">UNPROTECTED</span></h2>
+            <p class="reality-sub">Many delay medical protection until it's too late.</p>
+            <ul class="reality-breakdown">
+              <li class="bd"><span class="bd-dot bd-red"></span><span class="bd-pct">42%</span><span class="bd-text"><b>Cannot Afford It</b><span>Premiums feel too costly to keep up with, month after month.</span></span></li>
+              <li class="bd"><span class="bd-dot bd-amber"></span><span class="bd-pct">36%</span><span class="bd-text"><b>Don't Need It</b><span>Many underestimate their health risks until it's too late.</span></span></li>
+              <li class="bd"><span class="bd-dot bd-teal"></span><span class="bd-pct">22%</span><span class="bd-text"><b>Are Protected</b><span>Only a small minority have adequate coverage.</span></span></li>
+            </ul>
+            <a href="#cta-final" class="btn btn-primary">Get Protected Today <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+          </div>
+          <div class="reality-card-chart">
+            <div class="donut">
+              <div class="donut-hole">
+                <span class="stat-number donut-pct" data-target="78" data-suffix="%">0%</span>
+                <span class="donut-cap">Unprotected</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- TODO(client): Statistics below are from the WeKongsi sales deck (June 2026). Confirm sources/citations before publishing. -->
+        <div class="reality-reasons">
+          <div class="reason-card">
+            <div class="reason-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div>
+            <div class="reason-stat">12.2%</div><div class="reason-stat-cap">Annual medical inflation</div>
+            <h3>Healthcare Is Getting More Expensive</h3>
+            <p>Medical inflation is rising every year, outpacing average income growth.</p>
+          </div>
+          <div class="reason-card">
+            <div class="reason-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+            <div class="reason-stat">RM3,144</div><div class="reason-stat-cap">Avg. yearly private premium</div>
+            <h3>Private Hospitals Are Too Expensive</h3>
+            <p>A simple procedure can cost thousands, draining your life savings instantly.</p>
+          </div>
+          <div class="reason-card">
+            <div class="reason-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M6 21V4a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v17"/><path d="M15 9h3a1 1 0 0 1 1 1v11"/><path d="M9 7h3M9 11h3M9 15h3"/></svg></div>
+            <div class="reason-stat">5.2 hrs</div><div class="reason-stat-cap">Avg. government hospital wait</div>
+            <h3>Government Hospitals Are Overcrowded</h3>
+            <p>Long waiting times can worsen conditions that need immediate attention.</p>
+          </div>
+          <div class="reason-card">
+            <div class="reason-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8.5 14.5s1.2 1.5 3.5 1.5 3.5-1.5 3.5-1.5"/><line x1="9" y1="9.5" x2="9.01" y2="9.5"/><line x1="15" y1="9.5" x2="15.01" y2="9.5"/></svg></div>
+            <div class="reason-stat">48%</div><div class="reason-stat-cap">Malaysians lack protection</div>
+            <h3>Many Children Have No Protection</h3>
+            <p>Many families leave their kids unprotected due to high insurance premiums.</p>
+          </div>
+        </div>
+      </div>
+      <div class="reality-transition">
+        <div class="transition-line"></div>
+        <div class="transition-text">That's why WeKongsi was created.</div>
+        <div class="transition-line"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== INTRODUCING WEKONGSI ====== -->
+  <section class="intro" id="intro">
+    <div class="container">
+      <div class="intro-grid">
+        <div class="intro-content">
+          <span class="intro-eyebrow">WeKongsi is Not an Insurance Provider but a</span>
+          <h2 class="intro-title">Community-Based<br /><span class="gradient-text">Medical Cost-Sharing</span><br />Platform</h2>
+          <p>We Kongsi is designed to help members manage medical expenses through transparent and responsible sharing.</p>
+        </div>
+        <div class="intro-visual animate-scale-in">
+          <img src="phone.jpg" alt="WeKongsi mobile app showing total members, shared amount, supported hospitals and clinics" class="intro-phone" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== WHY CHOOSE ====== -->
+  <section class="why-choose" id="why-choose">
+    <div class="container">
+      <div class="sec-head">
+        <span class="tag">Why WeKongsi</span>
+        <h2>Six Reasons to Choose <span class="gradient-text">WeKongsi</span></h2>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card animate-fade-up">
+          <div class="feature-icon-wrap feature-icon-green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+          <h3>Affordable Participation</h3>
+          <p>Designed to remain accessible for individuals and families across Malaysia.</p>
+        </div>
+        <div class="feature-card animate-fade-up">
+          <div class="feature-icon-wrap feature-icon-teal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+          <h3>Community-Based Support</h3>
+          <p>Members help members through medical cost-sharing. No shareholders, just community.</p>
+        </div>
+        <div class="feature-card animate-fade-up">
+          <div class="feature-icon-wrap feature-icon-blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l4 6-10 12L2 9z"/><path d="M2 9h20"/><path d="M12 3 9 9l3 12 3-12-3-6z"/></svg></div>
+          <h3>Up to RM1 Million Support</h3>
+          <p>Annual medical support for approved eligible expenses, when it matters most.</p>
+        </div>
+        <div class="feature-card animate-fade-up">
+          <div class="feature-icon-wrap feature-icon-green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></div>
+          <h3>Transparent Sharing</h3>
+          <p>Sharing activities are openly communicated to all members every month.</p>
+        </div>
+        <div class="feature-card animate-fade-up">
+          <div class="feature-icon-wrap feature-icon-teal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V5a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v16"/><path d="M16 8h3a2 2 0 0 1 2 2v11"/><path d="M9 7h2M9 11h2M9 15h2"/></svg></div>
+          <h3>Conditional Outpatient Benefit</h3>
+          <p>Additional outpatient healthcare support for eligible conditions, powered by HEYDOC.</p>
+        </div>
+        <div class="feature-card animate-fade-up">
+          <div class="feature-icon-wrap feature-icon-blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="3"/><line x1="10" y1="18.5" x2="14" y2="18.5"/></svg></div>
+          <h3>Digital Member Experience</h3>
+          <p>Manage your membership conveniently through the WeKongsi App, anytime.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== IMPACT COUNTERS ====== -->
+  <section class="impact" id="impact">
+    <div class="impact-bg"><div class="impact-shape impact-shape-1"></div><div class="impact-shape impact-shape-2"></div></div>
+    <div class="container">
+      <div class="sec-head section-header-white">
+        <span class="tag section-tag-light">Community Impact</span>
+        <h2>Trusted by Our <br /><span class="gradient-text-light">Growing Community</span></h2>
+      </div>
+      <!-- TODO(client): Replace data-target values below with REAL live figures (total members, total bills shared in RM millions, hospital cases, clinic cases). Currently placeholders: 15000 / 8 / 1200 / 9500. -->
+      <div class="counters-grid">
+        <div class="counter-card">
+          <div class="counter-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+          <div class="counter-number" data-target="15000" data-suffix="+">0</div>
+          <div class="counter-label">Total Members</div>
+        </div>
+        <div class="counter-card">
+          <div class="counter-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M10.5 20.5 3.5 13.5a5 5 0 0 1 7-7l7 7a5 5 0 0 1-7 7z"/><line x1="8.5" y1="8.5" x2="15.5" y2="15.5"/></svg></div>
+          <div class="counter-number" data-target="8" data-suffix="M+" data-prefix="RM">0</div>
+          <div class="counter-label">Total Medical Bills Shared</div>
+        </div>
+        <div class="counter-card">
+          <div class="counter-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V5a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v16"/><path d="M11 7h0M11 11h0M11 15h0"/></svg></div>
+          <div class="counter-number" data-target="1200" data-suffix="+">0</div>
+          <div class="counter-label">Hospital Cases Approved</div>
+        </div>
+        <div class="counter-card">
+          <div class="counter-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
+          <div class="counter-number" data-target="9500" data-suffix="+">0</div>
+          <div class="counter-label">Clinic Cases Approved</div>
+        </div>
+      </div>
+      <p class="impact-sub">Every number represents a member who received support when they needed it most.</p>
+    </div>
+  </section>
+
+  <!-- ====== COVERAGE ====== -->
+  <section class="coverage" id="coverage">
+    <div class="container">
+      <div class="sec-head">
+        <span class="tag">Coverage</span>
+        <h2>Up to <span class="gradient-text">RM1,000,000</span> Medical Coverage</h2>
+        <p class="section-desc">Comprehensive inpatient support, shared by the community. *Co-sharing and waiting periods apply.</p>
+      </div>
+      <div class="coverage-grid">
+        <div class="coverage-card animate-fade-up">
+          <div class="tile tile-teal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16"/><path d="M12 7v6M9 10h6"/></svg></div>
+          <div class="cov-amount">Up to RM1,000,000/yr</div>
+          <h3>Inpatient Hospitalisation</h3>
+          <p>Support for hospitalisation and treatment due to illness or injury.</p>
+        </div>
+        <div class="coverage-card animate-fade-up">
+          <div class="tile tile-mint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M2 5v14"/><path d="M2 9h16a3 3 0 0 1 3 3v7"/><path d="M2 15h19"/><circle cx="7" cy="12" r="1.6"/></svg></div>
+          <div class="cov-amount">RM150–250 / day</div>
+          <h3>Room &amp; Board</h3>
+          <p>Hospital room and meals during in-patient stay, up to 120 days a year.</p>
+        </div>
+        <div class="coverage-card animate-fade-up">
+          <div class="tile tile-navy"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
+          <div class="cov-amount">Up to RM100,000</div>
+          <h3>Outpatient Cancer Treatment</h3>
+          <p>All cancer therapy types, separate from the RM1,000,000 annual limit.</p>
+        </div>
+        <div class="coverage-card animate-fade-up">
+          <div class="tile tile-soft"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 1 0-7.8 7.8L12 21.2l8.8-8.8a5.5 5.5 0 0 0 0-7.8z"/></svg></div>
+          <div class="cov-amount">RM10,000</div>
+          <h3>Bereavement Support</h3>
+          <p>Paid to your beneficiary in the event of a member's passing.</p>
+        </div>
+        <div class="coverage-card animate-fade-up">
+          <div class="tile tile-teal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17h2l1-3h12l1 3h2"/><path d="M5 17v2a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-2M16 17v2a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-2"/><path d="M7 14V7a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v7"/><path d="M12 8v4M10 10h4"/></svg></div>
+          <div class="cov-amount">Up to RM10,000</div>
+          <h3>Accidental Injury Treatment</h3>
+          <p>Support for accidental injuries and related medical treatment.</p>
+        </div>
+        <div class="coverage-card animate-fade-up">
+          <div class="tile tile-mint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="2.5"/><path d="M6 6v12M18 6v12"/></svg></div>
+          <div class="cov-amount">RM50–100 / day</div>
+          <h3>Daily Cash Allowance</h3>
+          <p>Cash benefit during government hospital stay, up to 120 days a year.</p>
+        </div>
+        <div class="coverage-card animate-fade-up">
+          <div class="tile tile-navy"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M9 15l2 2 4-4"/></svg></div>
+          <div class="cov-amount">Up to RM10,000</div>
+          <h3>Post-Hospital Follow-Up</h3>
+          <p>Follow-up treatment within 60 days after discharge.</p>
+        </div>
+        <div class="coverage-card animate-fade-up">
+          <div class="tile tile-soft"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M12 8v6M9 11h6"/></svg></div>
+          <div class="cov-amount">Included</div>
+          <h3>Surgery, ICU &amp; Ambulance</h3>
+          <p>Surgical fees, operating theatre, anaesthetist, ICU and ambulance.</p>
+        </div>
+      </div>
+      <div class="coverage-note">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+        Subject to Program Guidelines and eligibility requirements.
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== COB ====== -->
+  <section class="cob" id="cob">
+    <div class="container">
+      <div class="cob-top">
+        <div class="cob-intro animate-fade-up">
+          <span class="cob-pill"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 17.8 6.1 20.2l1.2-6.6L2.5 9l6.6-.9z"/></svg> Exclusive Add-On Benefit</span>
+          <h2 class="cob-title">Conditional Outpatient<br />Benefit <span class="gradient-text">(COB)</span></h2>
+          <div class="cob-powered"><span>Powered by</span><img src="heydoclogo.jpg" alt="HEYDOC Health" class="cob-heydoc-logo" /></div>
+          <p class="cob-desc">Enhance your healthcare access with COB, an optional outpatient benefit designed to support eligible everyday medical conditions through telemedicine services and clinic visits.</p>
+        </div>
+        <div class="cob-photo animate-scale-in">
+          <img src="common.jpg" alt="Member using telemedicine consultation at home" />
+          <div class="cob-rm-badge"><span>Add-On</span><b>RM15</b><em>/month</em></div>
+        </div>
+      </div>
+
+      <div class="cob-cards">
+        <div class="cob-bcard animate-fade-up">
+          <div class="cob-bcard-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="3"/><path d="M9.5 12.5h5M12 10v5"/><line x1="10" y1="19" x2="14" y2="19"/></svg></div>
+          <h3>Telemedicine Services</h3>
+          <p>Consult licensed doctors online from the comfort of your home. Receive an e-prescription and choose medication delivery or pharmacy collection where applicable.</p>
+        </div>
+        <div class="cob-bcard animate-fade-up" data-delay="120">
+          <div class="cob-bcard-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V8l7-5 7 5v13"/><path d="M12 5.5v3M10.5 7h3"/><rect x="10" y="14" width="4" height="7"/></svg></div>
+          <h3>Clinic Visits</h3>
+          <p>Access participating MiCare panel clinics nationwide for face-to-face consultations, diagnosis and treatment for eligible outpatient conditions.</p>
+        </div>
+      </div>
+
+      <div class="cob-stats-bar animate-fade-up">
+        <div class="cob-stat">
+          <span class="cob-stat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="2" x2="12" y2="22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></span>
+          <div class="cob-stat-text"><span>Up to</span><b>RM120</b><p>Support Per Episode</p></div>
+        </div>
+        <div class="cob-stat">
+          <span class="cob-stat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></span>
+          <div class="cob-stat-text"><span>Up to</span><b>8</b><p>Episodes Per Year</p></div>
+        </div>
+        <div class="cob-stat">
+          <span class="cob-stat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></span>
+          <div class="cob-stat-text"><span>Covers</span><b>17</b><p>Eligible Outpatient Conditions</p></div>
+        </div>
+      </div>
+
+      <div class="cob-cta-wrap animate-fade-up">
+        <a href="https://www.wekongsi.com/outpatient/guideline/index.html" target="_blank" rel="noopener" class="btn btn-primary cob-cta-btn">Learn More About COB <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        <p class="cob-note"><strong>COB</strong> is an optional add-on benefit. Terms and conditions apply.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== HOW COST-SHARING WORKS ====== -->
+  <section class="cost-sharing" id="how-it-works">
+    <div class="container">
+      <div class="sec-head">
+        <span class="tag tag-light">Real Examples</span>
+        <h2 class="on-dark">How <span class="gradient-text">Cost-Sharing</span> Works</h2>
+        <p class="section-desc on-dark-sub">Each month, the total approved medical bills of hospitalised members are shared fairly across all active members. Your contribution rises and falls with the community's actual needs — and is always capped, so you are never overcharged.</p>
+      </div>
+      <div class="cs-examples">
+        <div class="cs-example animate-fade-up">
+          <div class="cs-tag">Example 1</div>
+          <div class="cs-flow">
+            <div class="cs-node"><span class="cs-node-label">Total Medical Bill</span><span class="cs-node-val">RM100,000</span><span class="cs-node-sub">approved this month</span></div>
+            <span class="cs-op">÷</span>
+            <div class="cs-node"><span class="cs-node-label">Active Members</span><span class="cs-node-val">8,000</span><span class="cs-node-sub">this month</span></div>
+            <span class="cs-op">=</span>
+            <div class="cs-node cs-node-result"><span class="cs-node-label">Sharing Cost</span><span class="cs-node-val">RM12.50</span><span class="cs-node-sub">per member</span></div>
+          </div>
+          <div class="cs-outcome">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            <div class="cs-outcome-text"><b>You pay just RM12.50 this month</b><span>A RM100,000 hospital bill, split across 8,000 members, costs each person about the price of a coffee.</span></div>
+          </div>
+        </div>
+        <div class="cs-example cs-example-highlight animate-fade-up" data-delay="80">
+          <div class="cs-tag">Example 2</div>
+          <div class="cs-flow">
+            <div class="cs-node"><span class="cs-node-label">Total Medical Bill</span><span class="cs-node-val">RM800,000</span><span class="cs-node-sub">approved this month</span></div>
+            <span class="cs-op">÷</span>
+            <div class="cs-node"><span class="cs-node-label">Active Members</span><span class="cs-node-val">8,000</span><span class="cs-node-sub">this month</span></div>
+            <span class="cs-op">=</span>
+            <div class="cs-node cs-node-result"><span class="cs-node-label">Sharing Cost</span><span class="cs-node-val cs-strike">RM100</span><span class="cs-node-sub">before cap</span></div>
+            <span class="cs-op">→</span>
+            <div class="cs-node cs-node-cap"><span class="cs-node-label">You Pay Only</span><span class="cs-node-val">RM60</span><span class="cs-node-sub">capped per month</span></div>
+          </div>
+          <div class="cs-outcome cs-outcome-cap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <div class="cs-outcome-text"><b>You still pay only RM60 — never more</b><span>Even in a high-claim month where the share works out to RM100, your monthly contribution is capped at RM60. The remaining RM40 is carried forward, so your cost stays predictable.</span></div>
+          </div>
+        </div>
+        <div class="cs-example animate-fade-up" data-delay="160">
+          <div class="cs-tag">Example 3</div>
+          <div class="cs-flow">
+            <div class="cs-node"><span class="cs-node-label">Total Medical Bill</span><span class="cs-node-val">RM0</span><span class="cs-node-sub">no claims this month</span></div>
+            <span class="cs-op">÷</span>
+            <div class="cs-node"><span class="cs-node-label">Active Members</span><span class="cs-node-val">8,000</span><span class="cs-node-sub">this month</span></div>
+            <span class="cs-op">=</span>
+            <div class="cs-node cs-node-result"><span class="cs-node-label">Sharing Cost</span><span class="cs-node-val">RM0</span><span class="cs-node-sub">per member</span></div>
+          </div>
+          <div class="cs-outcome">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            <div class="cs-outcome-text"><b>No claims means you pay nothing</b><span>When no members are hospitalised, there is nothing to share — so your contribution for the month is RM0.</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== CHOOSE BENEFITS ====== -->
+  <section class="choose" id="choose">
+    <div class="container">
+      <div class="sec-head">
+        <span class="tag">Choose Your Coverage</span>
+        <h2>Choose The Benefits<br /><span class="gradient-text">That Suit You</span></h2>
+        <p class="section-desc">Select the protection that meets your needs.</p>
+      </div>
+      <div class="choose-grid">
+        <div class="choose-card animate-fade-up">
+          <span class="choose-badge choose-badge-1">Option 1</span>
+          <h3>Hospitalisation Only</h3>
+          <p class="choose-sub">Hospitalisation protection only</p>
+          <div class="choose-price"><span>Sharing</span><b>RM0 – RM60</b><small>/ month</small></div>
+          <ul class="choose-list">
+            <li><span class="ico ico-ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><div><b>Hospitalisation Benefit</b><span>Applicable when admitted to hospital</span></div></li>
+            <li><span class="ico ico-no"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span><div><b>No Conditional Outpatient Benefit</b><span>No outpatient clinic or panel benefit</span></div></li>
+          </ul>
+        </div>
+        <div class="choose-card choose-card-feat animate-fade-up" data-delay="100">
+          <span class="choose-badge choose-badge-2">Option 2</span>
+          <h3>Hospitalisation + COB</h3>
+          <p class="choose-sub">Hospitalisation + Conditional Outpatient Benefit</p>
+          <div class="choose-addon">Add only <strong>RM15</strong> / month</div>
+          <div class="choose-price"><span>Sharing</span><b>RM15 – RM75</b><small>/ month</small></div>
+          <ul class="choose-list">
+            <li><span class="ico ico-ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><div><b>Hospitalisation Benefit</b><span>Applicable when admitted to hospital</span></div></li>
+            <li><span class="ico ico-ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><div><b>Conditional Outpatient Benefit (COB)</b><span>Outpatient clinic &amp; panel benefit included</span></div></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== MEMBERSHIP PLANS ====== -->
+  <section class="plans" id="plans">
+    <div class="container">
+      <div class="sec-head">
+        <span class="tag">Membership</span>
+        <h2>Membership From <span class="gradient-text">RM40 a Month</span></h2>
+      </div>
+      <div class="plans-grid">
+        <div class="plan-card plan-card-basic animate-fade-up">
+          <div class="plan-label">Monthly</div>
+          <div class="plan-name">Monthly Plan</div>
+          <div class="plan-price"><span class="plan-price-amount">RM40</span><span class="plan-price-period">/month</span></div>
+          <ul class="plan-features">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Full Medical Cost-Sharing Benefits</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Up to RM1 Million Annual Support</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> WeKongsi App Access</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Flexible Month-to-Month</li>
+          </ul>
+          <a href="#cta-final" class="plan-btn plan-btn-outline">Get Started</a>
+        </div>
+        <div class="plan-card plan-card-recommended animate-fade-up" data-delay="100">
+          <div class="plan-recommended-badge"><svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15 9 22 9 17 14 19 21 12 17 5 21 7 14 2 9 9 9"/></svg> Most Popular</div>
+          <div class="plan-label">Quarterly</div>
+          <div class="plan-name">Quarterly Plan</div>
+          <div class="plan-price"><span class="plan-price-amount">RM100</span><span class="plan-price-period">/quarter</span></div>
+          <div class="plan-savings">Save up to 17% vs Monthly</div>
+          <ul class="plan-features">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Full Medical Cost-Sharing Benefits</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Up to RM1 Million Annual Support</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> WeKongsi App Access</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Better Long-Term Value</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Priority Member Support</li>
+          </ul>
+          <a href="#cta-final" class="plan-btn plan-btn-primary">Join Now</a>
+        </div>
+        <div class="plan-card plan-card-annual animate-fade-up" data-delay="200">
+          <div class="plan-label">Annual</div>
+          <div class="plan-name">Annual Plan</div>
+          <div class="plan-price"><span class="plan-price-amount">RM360</span><span class="plan-price-period">/year</span></div>
+          <div class="plan-savings">Save up to 25% vs Monthly</div>
+          <ul class="plan-features">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Full Medical Cost-Sharing Benefits</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Up to RM1 Million Annual Support</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> WeKongsi App Access</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Best Long-Term Value</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Priority Member Support</li>
+          </ul>
+          <a href="#cta-final" class="plan-btn plan-btn-outline">Get Started</a>
+        </div>
+      </div>
+      <p class="plans-note">Membership fees are fixed as published in the Program Guidelines. The membership fee is separate from your Sharing Account contribution and is collected automatically via eMandate.</p>
+    </div>
+  </section>
+
+  <!-- ====== SHARING ACCOUNT ====== -->
+  <section class="sharing-account" id="sharing-account">
+    <div class="container">
+      <div class="sec-head">
+        <span class="tag">Sharing Account</span>
+        <h2>Your Sharing Account, <span class="gradient-text">Fully Owned by You</span></h2>
+        <p class="section-desc">Your Sharing Account is used to participate in monthly medical cost-sharing within the community. The funds are owned solely by you and managed by a licensed Trustee.</p>
+      </div>
+      <div class="packages-grid">
+        <div class="package-card package-standard animate-fade-up">
+          <div class="package-header">
+            <div class="tile tile-navy"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v3"/><path d="M3 8h18v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M16 12h2"/></svg></div>
+            <h3>Standard Package</h3>
+          </div>
+          <div class="package-autotopup"><span class="package-autotopup-label">Auto Top-Up To</span><span class="package-autotopup-amount">RM150</span></div>
+          <p class="package-desc">Suitable for most members — the essential sharing balance for monthly participation.</p>
+          <div class="package-pricing">
+            <div class="package-pricing-row"><span class="package-pricing-label">Inpatient Only</span><span class="package-pricing-range">RM0 – RM60/mo</span></div>
+            <div class="package-pricing-row"><span class="package-pricing-label">Inpatient + COB</span><span class="package-pricing-range">RM15 – RM75/mo</span></div>
+          </div>
+        </div>
+        <div class="package-card package-deluxe animate-fade-up" data-delay="100">
+          <div class="package-badge">Premium</div>
+          <div class="package-header">
+            <div class="tile tile-teal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l4 6-10 12L2 9z"/><path d="M2 9h20"/><path d="M12 3 9 9l3 12 3-12-3-6z"/></svg></div>
+            <h3>Deluxe Package</h3>
+          </div>
+          <div class="package-autotopup"><span class="package-autotopup-label">Auto Top-Up To</span><span class="package-autotopup-amount">RM300</span></div>
+          <p class="package-desc">A higher available balance for members who want a larger sharing capacity.</p>
+          <div class="package-pricing">
+            <div class="package-pricing-row"><span class="package-pricing-label">Inpatient Only</span><span class="package-pricing-range">RM0 – RM60/mo</span></div>
+            <div class="package-pricing-row"><span class="package-pricing-label">Inpatient + COB</span><span class="package-pricing-range">RM15 – RM75/mo</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="sharing-note">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+        Actual monthly sharing depends on approved medical cases for the month.
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== COST-SHARING & AUTO TOP-UP ====== -->
+  <section class="autotop" id="auto-top-up">
+    <div class="impact-bg"><div class="impact-shape impact-shape-1"></div><div class="impact-shape impact-shape-2"></div></div>
+    <div class="container">
+      <div class="sec-head section-header-white">
+        <span class="tag section-tag-light">Cost-Sharing &amp; Auto Top-Up</span>
+        <h2>Set Up Once, <span class="gradient-text-light">Always Protected</span></h2>
+        <p class="section-desc" style="color:rgba(255,255,255,.8)">After a simple setup and waiting period, your sharing runs automatically — with auto top-up keeping your protection active.</p>
+      </div>
+      <div class="timeline">
+        <div class="tl-step animate-fade-up"><div class="tl-num">1</div><div class="tl-day">Day 1</div><h4>Join</h4><p>Register as a WeKongsi member.</p></div>
+        <div class="tl-step animate-fade-up" data-delay="80"><div class="tl-num">2</div><div class="tl-day">Day 60</div><h4>Set Sharing Contribution</h4><p>Fund your Sharing Account — RM150 (Standard) or RM300 (Deluxe).</p></div>
+        <div class="tl-step animate-fade-up" data-delay="160"><div class="tl-num">3</div><div class="tl-day">Day 1 – 90</div><h4>Waiting Period</h4><p>No sharing deduction yet during the first 90 days.</p></div>
+        <div class="tl-step animate-fade-up" data-delay="240"><div class="tl-num">4</div><div class="tl-day">Day 91 Onwards</div><h4>Sharing Begins</h4><p>Each month, RM15 – RM75 is deducted based on approved cases.</p></div>
+      </div>
+      <div class="autotop-flow animate-fade-up">
+        <div class="atf-head"><span class="tile-sm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg></span> Auto Top-Up Mechanism</div>
+        <div class="atf-steps">
+          <div class="atf-step">Balance falls below <strong>RM75</strong></div>
+          <span class="atf-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+          <div class="atf-step">Auto top-up is triggered</div>
+          <span class="atf-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+          <div class="atf-step">Balance is restored</div>
+        </div>
+        <div class="atf-plans">
+          <div class="atf-plan"><span>Standard Package</span><b>Topped up to RM150</b></div>
+          <div class="atf-plan"><span>Deluxe Package</span><b>Topped up to RM300</b></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== CO-SHARE ====== -->
+  <section class="coshare" id="coshare">
+    <div class="container">
+      <div class="sec-head">
+        <span class="tag">Co-Share</span>
+        <h2>Pay Only Up to <span class="gradient-text">RM500 Per Admission</span></h2>
+        <p class="section-desc">When you're admitted as an inpatient, you pay a small co-share portion of the approved bill — and the community shares the rest. Your co-share is based on your age group and is always capped.</p>
+      </div>
+      <div class="coshare-grid">
+        <div class="coshare-card animate-fade-up">
+          <div class="coshare-age">Age 0 – 5</div>
+          <div class="coshare-rate">25<span>%</span></div>
+          <div class="coshare-of">of the approved bill</div>
+        </div>
+        <div class="coshare-card coshare-card-featured animate-fade-up" data-delay="100">
+          <div class="coshare-best">Lowest Rate</div>
+          <div class="coshare-age">Age 6 – 45</div>
+          <div class="coshare-rate">10<span>%</span></div>
+          <div class="coshare-of">of the approved bill</div>
+        </div>
+        <div class="coshare-card animate-fade-up" data-delay="200">
+          <div class="coshare-age">Age 46 &amp; above</div>
+          <div class="coshare-rate">20<span>%</span></div>
+          <div class="coshare-of">of the approved bill</div>
+        </div>
+      </div>
+      <div class="coshare-cap-box">
+        <div class="coshare-cap-main">
+          <div class="coshare-cap-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></div>
+          <div>
+            <h3>Capped at <span class="coshare-cap-highlight">RM500</span> per admission</h3>
+            <p>No matter how large the approved bill, your co-share never exceeds RM500 per inpatient admission.*</p>
+          </div>
+        </div>
+        <ul class="coshare-points">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Calculated on the <strong>final approved bill</strong>, after TPA review</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Applies <strong>per inpatient admission</strong>, on eligible bills only</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> <strong>No co-share</strong> for Government Hospital admissions</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Your co-share is <strong>not shared</strong> with the community</li>
+        </ul>
+      </div>
+      <p class="coshare-footnote">*The co-share cap may be revised to RM1,000 per admission effective end of December 2026, subject to program sustainability assessment.</p>
+    </div>
+  </section>
+
+  <!-- ====== PARTNERS ====== -->
+  <section class="partners" id="partners">
+    <div class="container">
+      <div class="sec-head">
+        <span class="tag">Our Partners</span>
+        <h2>Backed by <span class="gradient-text">Trusted Partners</span></h2>
+      </div>
+      <div class="partners-category">
+        <h3 class="partners-category-title">Healthcare Technology Partners</h3>
+        <div class="partners-row">
+          <div class="partner-logo-card"><img src="heydoclogo.jpg" alt="HEYDOC Health" /></div>
+          <div class="partner-logo-card"><img src="micare.jpg" alt="MiCare" /></div>
+          <div class="partner-logo-card"><img src="e-MAS Logo.jpg" alt="eMAS" /></div>
+        </div>
+      </div>
+      <div class="partners-category">
+        <h3 class="partners-category-title">Financial, Shariah &amp; Actuarial Partners</h3>
+        <div class="partners-row">
+          <div class="partner-logo-card"><img src="palladium.jpg" alt="Palladium Trustee" /></div>
+          <div class="partner-logo-card"><img src="afsha.jpg" alt="Afsha Shariah Advisory" /></div>
+          <div class="partner-logo-card"><img src="bayes.jpg" alt="Bayes Actuarial Solutions" /></div>
+          <div class="partner-logo-card"><img src="Curlec.jpg" alt="Curlec by Razorpay" /></div>
+        </div>
+      </div>
+      <div class="partners-category">
+        <h3 class="partners-category-title">250+ Panel Hospitals Nationwide</h3>
+        <div class="marquee">
+          <div class="marquee-track">
+            <div class="marquee-set">
+              <div class="partner-logo-card"><img src="image5.jpg" alt="Panel Hospital" /></div>
+              <div class="partner-logo-card"><img src="image6.jpg" alt="Panel Hospital" /></div>
+              <div class="partner-logo-card"><img src="image7.jpg" alt="Panel Hospital" /></div>
+              <div class="partner-logo-card"><img src="image8.jpg" alt="Panel Hospital" /></div>
+              <div class="partner-logo-card"><img src="image9.jpg" alt="Panel Hospital" /></div>
+              <div class="partner-logo-card"><img src="image10.jpg" alt="Panel Hospital" /></div>
+              <div class="partner-logo-card"><img src="image11.jpg" alt="Panel Hospital" /></div>
+              <div class="partner-logo-card"><img src="image12.jpg" alt="Panel Hospital" /></div>
+              <div class="partner-logo-card"><img src="image13.jpg" alt="Panel Hospital" /></div>
+              <div class="partner-logo-card"><img src="image14.jpg" alt="Panel Hospital" /></div>
+              <div class="partner-logo-card"><img src="image15.jpg" alt="Panel Hospital" /></div>
+            </div>
+            <div class="marquee-set" aria-hidden="true">
+              <div class="partner-logo-card"><img src="image5.jpg" alt="" /></div>
+              <div class="partner-logo-card"><img src="image6.jpg" alt="" /></div>
+              <div class="partner-logo-card"><img src="image7.jpg" alt="" /></div>
+              <div class="partner-logo-card"><img src="image8.jpg" alt="" /></div>
+              <div class="partner-logo-card"><img src="image9.jpg" alt="" /></div>
+              <div class="partner-logo-card"><img src="image10.jpg" alt="" /></div>
+              <div class="partner-logo-card"><img src="image11.jpg" alt="" /></div>
+              <div class="partner-logo-card"><img src="image12.jpg" alt="" /></div>
+              <div class="partner-logo-card"><img src="image13.jpg" alt="" /></div>
+              <div class="partner-logo-card"><img src="image14.jpg" alt="" /></div>
+              <div class="partner-logo-card"><img src="image15.jpg" alt="" /></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== TESTIMONIALS ====== -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="sec-head">
+        <span class="tag">Testimonials</span>
+        <h2>Real Members, <span class="gradient-text">Real Stories</span></h2>
+      </div>
+      <!-- TODO(client): The 4 testimonials below are FICTIONAL placeholders. Replace with real member quotes + names + locations (with written consent) before publishing. -->
+      <div class="testimonials-grid">
+        <div class="testimonial-card animate-fade-up">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"I couldn't afford traditional medical insurance due to the high premiums. WeKongsi gave me peace of mind at a price I can actually maintain. When I was hospitalised last year, the community support covered most of my bills."</p>
+          <div class="testimonial-author"><div class="testimonial-avatar testimonial-avatar-1">A</div><div><div class="testimonial-name">Ahmad Farid</div><div class="testimonial-role">Member since 2024 · Kuala Lumpur</div></div></div>
+          <div class="testimonial-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg> Affordability</div>
+        </div>
+        <div class="testimonial-card animate-fade-up" data-delay="100">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"The transparency convinced me. Every month I can see exactly how the sharing works, how much was shared, and how many members were helped. This is truly community-powered healthcare."</p>
+          <div class="testimonial-author"><div class="testimonial-avatar testimonial-avatar-2">S</div><div><div class="testimonial-name">Siti Nurhaliza</div><div class="testimonial-role">Member since 2023 · Johor Bahru</div></div></div>
+          <div class="testimonial-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg> Transparency</div>
+        </div>
+        <div class="testimonial-card animate-fade-up">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"My father needed urgent surgery and we were worried about the cost. WeKongsi processed the sharing quickly and the community support was incredible. I'm so grateful for this program."</p>
+          <div class="testimonial-author"><div class="testimonial-avatar testimonial-avatar-3">R</div><div><div class="testimonial-name">Raj Kumar</div><div class="testimonial-role">Member since 2024 · Penang</div></div></div>
+          <div class="testimonial-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V5a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v16"/><path d="M16 8h3a2 2 0 0 1 2 2v11"/></svg> Medical Assistance</div>
+        </div>
+        <div class="testimonial-card animate-fade-up" data-delay="100">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"As a single mother, I needed something affordable that actually works. The COB benefit has been a lifesaver — I can consult a doctor online for my children's common illnesses without worrying about costs."</p>
+          <div class="testimonial-author"><div class="testimonial-avatar testimonial-avatar-4">N</div><div><div class="testimonial-name">Nurul Ain</div><div class="testimonial-role">Member since 2023 · Shah Alam</div></div></div>
+          <div class="testimonial-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/></svg> Community Support</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FAQ ====== -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="sec-head">
+        <span class="tag">FAQ</span>
+        <h2>Frequently Asked <span class="gradient-text">Questions</span></h2>
+      </div>
+      <div class="faq-grid">
+        <div class="faq-item" id="faq-1">
+          <button class="faq-question" onclick="toggleFaq('faq-1')"><span>What is Medical Cost-Sharing?</span><span class="faq-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
+          <div class="faq-answer"><p>Medical Cost-Sharing is a community-based model where members voluntarily pool resources to help cover each other's approved medical expenses. When a member has an eligible medical bill, the community shares the cost among all active members, making healthcare more accessible and affordable.</p></div>
+        </div>
+        <div class="faq-item" id="faq-2">
+          <button class="faq-question" onclick="toggleFaq('faq-2')"><span>How is WeKongsi different from insurance?</span><span class="faq-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
+          <div class="faq-answer"><p>WeKongsi is NOT an insurance product. Unlike insurance, WeKongsi is a community-driven program where members help members — there's no insurance company taking profit. Members contribute only when there are approved medical cases, making it more transparent and community-focused.</p></div>
+        </div>
+        <div class="faq-item" id="faq-3">
+          <button class="faq-question" onclick="toggleFaq('faq-3')"><span>How much do I contribute monthly?</span><span class="faq-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
+          <div class="faq-answer"><p>Your monthly sharing depends on the approved medical cases that month, divided among all active members. Inpatient sharing is capped at RM60 per member. With the COB option you may contribute an additional RM15. The membership fee is separate and fixed at RM40/month (or RM100/quarter, RM360/year).</p></div>
+        </div>
+        <div class="faq-item" id="faq-4">
+          <button class="faq-question" onclick="toggleFaq('faq-4')"><span>What happens if there are no approved cases?</span><span class="faq-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
+          <div class="faq-answer"><p>If there are no approved hospital cases in a month, no inpatient sharing is required. Your Sharing Account balance is carried forward and remains available for future months when the community needs support.</p></div>
+        </div>
+        <div class="faq-item" id="faq-5">
+          <button class="faq-question" onclick="toggleFaq('faq-5')"><span>What is COB (Conditional Outpatient Benefit)?</span><span class="faq-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
+          <div class="faq-answer"><p>COB provides support for everyday illnesses, including telemedicine via HEYDOC Health and clinic visits at MiCare panel clinics nationwide. Members receive up to RM120 support per episode, for up to 8 episodes per year, covering 17 eligible outpatient conditions.</p></div>
+        </div>
+        <div class="faq-item" id="faq-6">
+          <button class="faq-question" onclick="toggleFaq('faq-6')"><span>Can I opt out of COB?</span><span class="faq-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
+          <div class="faq-answer"><p>Yes, COB is optional. You can choose an Inpatient-Only package without COB, or include COB for comprehensive outpatient support. Speak to your WeKongsi agent for details on the available options.</p></div>
+        </div>
+        <div class="faq-item" id="faq-7">
+          <button class="faq-question" onclick="toggleFaq('faq-7')"><span>How does sharing work in practice?</span><span class="faq-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
+          <div class="faq-answer"><p>Each month, all approved medical bills are totalled and divided equally among active members. For example, if RM200,000 in bills is approved across 5,000 active members, each member shares RM40 that month. Inpatient sharing is always capped at RM60/month.</p></div>
+        </div>
+        <div class="faq-item" id="faq-8">
+          <button class="faq-question" onclick="toggleFaq('faq-8')"><span>How do I join WeKongsi?</span><span class="faq-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
+          <div class="faq-answer"><p>Join WeKongsi by speaking with a registered agent who will guide you through membership, help you choose the right plan, and complete your registration. Click "Join WeKongsi Today" or "Speak To An Agent" to get started.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FINAL CTA ====== -->
+  <section class="cta-final" id="cta-final">
+    <div class="cta-bg-shapes"><div class="cta-shape cta-shape-1"></div><div class="cta-shape cta-shape-2"></div></div>
+    <div class="container">
+      <div class="cta-content">
+        <img src="wekongsilogo.jpg" alt="WeKongsi" class="cta-logo-img" />
+        <h2>Join A Community<br /><span class="gradient-text-light">That Cares</span></h2>
+        <p>Become part of a community helping one another access healthcare support when it matters most.</p>
+        <div class="cta-actions">
+          <a href="https://wa.me/?text=Hi%2C+I%27m+interested+in+joining+WeKongsi.+Please+share+more+information." target="_blank" class="btn btn-primary btn-large" id="cta-join-btn">Join WeKongsi Today <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+          <a href="https://wa.me/?text=Hi%2C+I%27d+like+to+speak+to+a+WeKongsi+agent+to+learn+more." target="_blank" class="btn btn-white btn-large" id="cta-agent-btn">Speak To An Agent</a>
+        </div>
+        <div class="cta-trust-row">
+          <div class="cta-trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Community-Driven Cost-Sharing</div>
+          <div class="cta-trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Shariah Compliant</div>
+          <div class="cta-trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Transparent Sharing Process</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="wekongsilogo.jpg" alt="WeKongsi" class="footer-logo" />
+          <p>A community-driven Medical Cost-Sharing Program making healthcare support more accessible and affordable for all Malaysians.</p>
+          <div class="footer-social">
+            <a href="#" class="social-link" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
+            <a href="#" class="social-link" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+            <a href="#" class="social-link" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+            <a href="#" class="social-link" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-links-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#intro">About WeKongsi</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#coverage">Coverage</a></li>
+            <li><a href="#plans">Membership Plans</a></li>
+            <li><a href="#cob">COB Benefit</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#">Program Guidelines</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="https://wa.me/" target="_blank">WhatsApp Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4>Contact</h4>
+          <div class="footer-contact">
+            <p>info@wekongsi.com</p>
+            <p>WhatsApp: +60 12-345 6789</p>
+            <p>Kita Kongsi Sdn. Bhd. (1492373-D)</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-disclaimer"><strong>Disclaimer:</strong> WeKongsi is a community-driven Medical Cost-Sharing Program and is not an insurance product. Medical cost-sharing is subject to Program Guidelines and eligibility requirements. Past sharing activities do not guarantee future sharing amounts.</p>
+        <p class="footer-copy">© 2026 Kita Kongsi Sdn. Bhd. (1492373-D). All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/?text=Hi%2C+I%27m+interested+in+WeKongsi+Medical+Cost-Sharing+Program." target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" width="26" height="26"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+    <span>Chat With Us</span>
+  </a>
+
+  <script src="script.js?v=20260616k"></script>
+</body>
+</html>
