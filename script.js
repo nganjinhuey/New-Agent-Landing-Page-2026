@@ -317,5 +317,128 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 2800);
   })();
 
+  // ====== AUTO TOP-UP SIMULATION ======
+  (function () {
+    const fill = document.getElementById('topupFill');
+    const bal = document.getElementById('topupBal');
+    const status = document.getElementById('topupStatus');
+    const legs = document.querySelectorAll('.topup-leg');
+    if (!fill || !bal || !status) return;
+
+    const MAX = 150;
+    const TRIGGER = 45;       // matches the 30% marker on the meter
+    const STEP = 30;          // monthly sharing deducted per tick
+    let v = MAX;
+    let phase = 'deduct';
+    let timer = null;
+
+    function setLeg(p) {
+      legs.forEach(l => l.classList.toggle('active', l.dataset.phase === p));
+    }
+    function render() {
+      fill.style.width = (v / MAX * 100) + '%';
+      bal.textContent = 'RM' + v;
+      fill.classList.toggle('low', v <= TRIGGER);
+    }
+    function tick() {
+      if (phase === 'deduct') {
+        v -= STEP;
+        if (v <= TRIGGER) {
+          v = Math.max(v, 15);
+          phase = 'trigger';
+          status.innerHTML = '<span class="topup-dot"></span> Balance below trigger — auto top-up activating';
+          setLeg('trigger');
+        } else {
+          status.innerHTML = '<span class="topup-dot"></span> Monthly sharing deducted…';
+          setLeg('deduct');
+        }
+      } else if (phase === 'trigger') {
+        phase = 'restore';
+        v = MAX;
+        status.innerHTML = '<span class="topup-dot"></span> Auto top-up complete — balance restored';
+        setLeg('restore');
+      } else {
+        phase = 'deduct';
+        status.innerHTML = '<span class="topup-dot"></span> Monthly sharing deducted…';
+        setLeg('deduct');
+      }
+      render();
+    }
+
+    render();
+    setLeg('deduct');
+
+    // Only run the loop while the section is in view
+    const simSection = document.querySelector('.autotop');
+    if (simSection && 'IntersectionObserver' in window) {
+      const obs = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            if (!timer) timer = setInterval(tick, 1500);
+          } else if (timer) {
+            clearInterval(timer);
+            timer = null;
+          }
+        });
+      }, { threshold: 0.25 });
+      obs.observe(simSection);
+    } else {
+      timer = setInterval(tick, 1500);
+    }
+  })();
+
+  // ====== TESTIMONIAL CAROUSEL ======
+  (function () {
+    const vp = document.getElementById('tcardViewport');
+    const nextBtn = document.getElementById('tcardNext');
+    const prevBtn = document.getElementById('tcardPrev');
+    if (!vp) return;
+
+    const PAUSE = 5000; // ms each slide rests before advancing
+    const atEnd = () => vp.scrollLeft + vp.clientWidth >= vp.scrollWidth - 2;
+    const step = () => Math.max(280, Math.round(vp.clientWidth * 0.85));
+
+    function advance() {
+      if (atEnd()) {
+        vp.scrollTo({ left: 0, behavior: 'smooth' });
+      } else {
+        vp.scrollBy({ left: step(), behavior: 'smooth' });
+      }
+    }
+    function rewind() {
+      if (vp.scrollLeft <= 2) {
+        vp.scrollTo({ left: vp.scrollWidth, behavior: 'smooth' });
+      } else {
+        vp.scrollBy({ left: -step(), behavior: 'smooth' });
+      }
+    }
+
+    // Stepped auto-advance with a long pause between moves
+    let auto = null;
+    function startAuto() { if (!auto) auto = setInterval(advance, PAUSE); }
+    function stopAuto() { if (auto) { clearInterval(auto); auto = null; } }
+    // Restart the pause timer after a manual interaction
+    function bump() { stopAuto(); startAuto(); }
+
+    if (nextBtn) nextBtn.addEventListener('click', () => { advance(); bump(); });
+    if (prevBtn) prevBtn.addEventListener('click', () => { rewind(); bump(); });
+
+    // Pause on hover, resume on leave
+    vp.addEventListener('mouseenter', stopAuto);
+    vp.addEventListener('mouseleave', startAuto);
+    vp.addEventListener('touchstart', stopAuto, { passive: true });
+
+    // Only run while the section is on screen
+    const section = document.querySelector('.testimonials');
+    if (section && 'IntersectionObserver' in window) {
+      const obs = new IntersectionObserver((entries) => {
+        entries.forEach(e => { e.isIntersecting ? startAuto() : stopAuto(); });
+      }, { threshold: 0.15 });
+      obs.observe(section);
+    } else {
+      startAuto();
+    }
+  })();
+
   console.log('WeKongsi Landing Page initialized');
 });
