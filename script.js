@@ -85,9 +85,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ====== COUNTER ANIMATION ======
   function animateCounter(el) {
-    const target = parseInt(el.dataset.target);
+    const target = parseFloat(el.dataset.target);
     const suffix = el.dataset.suffix || '';
     const prefix = el.dataset.prefix || '';
+    const decimals = parseInt(el.dataset.decimals) || 0;
     const duration = 2000;
     const step = target / (duration / 16);
     let current = 0;
@@ -98,7 +99,9 @@ document.addEventListener('DOMContentLoaded', () => {
         current = target;
         clearInterval(timer);
       }
-      const formatted = Math.floor(current).toLocaleString();
+      const formatted = decimals
+        ? current.toFixed(decimals)
+        : Math.floor(current).toLocaleString();
       el.textContent = prefix + formatted + suffix;
     }, 16);
   }
