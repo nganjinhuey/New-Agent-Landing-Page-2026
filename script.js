@@ -298,20 +298,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ====== HERO ROTATING OBJECTIONS ======
   (function () {
-    const phrases = [
+    const fallback = [
       "I don't think it's important right now.",
       "I'm still young and healthy.",
       "I don't understand how it works.",
       "The terms are too complicated."
     ];
+    function phrases() {
+      var p = (window.wkT && window.wkT('hero.rotate'));
+      return (Array.isArray(p) && p.length) ? p : fallback;
+    }
     const el = document.querySelector('.hero-rotate-text');
     if (!el) return;
     let i = 0;
     setInterval(() => {
       el.classList.add('out');
       setTimeout(() => {
-        i = (i + 1) % phrases.length;
-        el.textContent = phrases[i];
+        var p = phrases();
+        i = (i + 1) % p.length;
+        el.textContent = p[i];
         el.classList.remove('out');
       }, 420);
     }, 2800);
@@ -335,6 +340,9 @@ document.addEventListener('DOMContentLoaded', () => {
     function setLeg(p) {
       legs.forEach(l => l.classList.toggle('active', l.dataset.phase === p));
     }
+    function st(key) {
+      return '<span class="topup-dot"></span> ' + (window.wkT ? window.wkT(key) : '');
+    }
     function render() {
       fill.style.width = (v / MAX * 100) + '%';
       bal.textContent = 'RM' + v;
@@ -346,16 +354,16 @@ document.addEventListener('DOMContentLoaded', () => {
         if (v <= TRIGGER) {
           v = Math.max(v, 15);
           phase = 'trigger';
-          status.innerHTML = '<span class="topup-dot"></span> Balance below trigger — auto top-up activating';
+          status.innerHTML = st('at.status.trigger');
           setLeg('trigger');
         } else {
-          status.innerHTML = '<span class="topup-dot"></span> Monthly sharing deducted…';
+          status.innerHTML = st('at.status.deduct');
           setLeg('deduct');
         }
       } else if (phase === 'trigger') {
         phase = 'restore';
         v = MAX;
-        status.innerHTML = '<span class="topup-dot"></span> Auto top-up complete — balance restored';
+        status.innerHTML = st('at.status.restore');
         setLeg('restore');
       } else {
         phase = 'deduct';
@@ -440,5 +448,5 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   })();
 
-  console.log('WeKongsi Landing Page initialized');
+  console.log('We Kongsi Landing Page initialized');
 });
