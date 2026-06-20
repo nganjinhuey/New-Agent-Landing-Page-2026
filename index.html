@@ -10,8 +10,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=20260618b" />
-  <script src="i18n.js?v=20260618b"></script>
+  <link rel="stylesheet" href="styles.css?v=20260618j" />
+  <script src="i18n.js?v=20260618j"></script>
 </head>
 <body>
 
@@ -258,6 +258,9 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
         <span data-i18n="coverage.note">Subject to Program Guidelines and eligibility requirements.</span>
       </div>
+      <div class="sec-cta animate-fade-up">
+        <a href="#cta-final" class="btn btn-primary btn-large"><span data-i18n="band.cov.btn">Unlock Your Protection</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+      </div>
     </div>
   </section>
 
@@ -381,6 +384,10 @@
           <span class="cs-afford-versus" data-i18n="cs.afford.vs">vs</span>
           <div class="cs-afford-chip cs-afford-chip-wk"><span>We Kongsi</span><b data-i18n="cs.afford.from">fr. RM2</b></div>
         </div>
+      </div>
+
+      <div class="sec-cta animate-fade-up">
+        <a href="#cta-final" class="btn btn-white btn-large"><span data-i18n="band.cs.btn">See How Little It Costs</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
       </div>
     </div>
   </section>
@@ -594,71 +601,26 @@
         <h2 data-i18n="co.title">How <span class="gradient-text">Co-Share</span> Works</h2>
         <p class="section-desc" data-i18n="co.desc">When you're admitted as an inpatient, you pay a small co-share portion of the approved bill — and the community shares the rest. Your co-share is based on your age group and is always capped.</p>
       </div>
-      <div class="coshare-grid">
-        <div class="coshare-card animate-fade-up">
-          <div class="coshare-photo"><img src="child.jpg?v=2" alt="Child member" /></div>
-          <div class="coshare-card-body">
-            <div class="coshare-age" data-i18n="co.age1">Age 0 – 5</div>
-            <div class="coshare-rate">25<span>%</span></div>
-            <div class="coshare-of" data-i18n="co.ofbill">of the approved bill</div>
-          </div>
+      <div class="coshare-layout animate-fade-up">
+        <div class="coshare-media">
+          <img src="adult.jpg?v=2" alt="We Kongsi member" />
         </div>
-        <div class="coshare-card coshare-card-featured animate-fade-up" data-delay="100">
-          <div class="coshare-photo"><img src="adult.jpg?v=2" alt="Adult member" /></div>
-          <div class="coshare-card-body">
-            <div class="coshare-age" data-i18n="co.age2">Age 6 – 45</div>
-            <div class="coshare-rate">10<span>%</span></div>
-            <div class="coshare-of" data-i18n="co.ofbill">of the approved bill</div>
+        <div class="coshare-content">
+          <div class="coshare-table">
+            <div class="coshare-trow coshare-thead"><span data-i18n="co.th.age">Age Group</span><span data-i18n="co.th.rate">Co-Share Rate</span></div>
+            <div class="coshare-trow"><span class="coshare-trow-age" data-i18n="co.age1">Age 0 – 5</span><span class="coshare-trow-rate">25%</span></div>
+            <div class="coshare-trow coshare-trow-feat"><span class="coshare-trow-age" data-i18n="co.age2">Age 6 – 45</span><span class="coshare-trow-rate">10%</span></div>
+            <div class="coshare-trow"><span class="coshare-trow-age" data-i18n="co.age3">Age 46 and above</span><span class="coshare-trow-rate">20%</span></div>
           </div>
-        </div>
-        <div class="coshare-card animate-fade-up" data-delay="200">
-          <div class="coshare-photo"><img src="old.jpg?v=2" alt="Senior member" /></div>
-          <div class="coshare-card-body">
-            <div class="coshare-age" data-i18n="co.age3">Age 46 &amp; above</div>
-            <div class="coshare-rate">20<span>%</span></div>
-            <div class="coshare-of" data-i18n="co.ofbill">of the approved bill</div>
-          </div>
+          <ul class="coshare-points">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> <span data-i18n="co.note1">Co-share is <strong>capped at RM500 per admission</strong>.</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> <span data-i18n="co.note2"><strong>No co-share</strong> applies for admissions to government hospitals.</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> <span data-i18n="co.note3">Loyal members (3+ years, no inpatient claims) can claim a co-share reimbursement up to RM500.</span></li>
+          </ul>
         </div>
       </div>
-
-      <div class="coshare-example animate-fade-up">
-        <div class="cse-head"><span class="cse-tag" data-i18n="co.worked">Worked Example</span><h3 data-i18n="co.ex1.t">Mei, age 28, has a RM2,000 hospital bill</h3></div>
-        <div class="cse-flow">
-          <div class="cse-node"><span class="cse-label" data-i18n="co.lbl.approved">Approved Bill</span><span class="cse-val">RM2,000</span></div>
-          <span class="cse-op">×</span>
-          <div class="cse-node"><span class="cse-label" data-i18n="co.lbl.rate">Co-Share (Age 6 – 45)</span><span class="cse-val">10%</span></div>
-          <span class="cse-op">=</span>
-          <div class="cse-node cse-node-cap"><span class="cse-label" data-i18n="co.lbl.youpay">You Pay Only</span><span class="cse-val">RM200</span><span class="cse-sub" data-i18n="co.ex1.cap">within the RM500 cap</span></div>
-        </div>
-        <div class="cse-result"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> <span data-i18n="co.ex1.result">Mei pays just <strong>RM200</strong> — the community shares the remaining <strong>RM1,800</strong> of the bill.</span></div>
-      </div>
-      <div class="coshare-example animate-fade-up">
-        <div class="cse-head"><span class="cse-tag" data-i18n="co.worked">Worked Example</span><h3 data-i18n="co.ex2.t">Aiman, age 30, is admitted to a private hospital</h3></div>
-        <div class="cse-flow">
-          <div class="cse-node"><span class="cse-label" data-i18n="co.lbl.approved">Approved Bill</span><span class="cse-val">RM50,000</span></div>
-          <span class="cse-op">×</span>
-          <div class="cse-node"><span class="cse-label" data-i18n="co.lbl.rate">Co-Share (Age 6 – 45)</span><span class="cse-val">10%</span></div>
-          <span class="cse-op">=</span>
-          <div class="cse-node"><span class="cse-label" data-i18n="co.lbl.worksout">Works Out To</span><span class="cse-val cse-strike">RM5,000</span></div>
-          <span class="cse-op">→</span>
-          <div class="cse-node cse-node-cap"><span class="cse-label" data-i18n="co.lbl.youpay">You Pay Only</span><span class="cse-val">RM500</span><span class="cse-sub" data-i18n="co.ex2.cap">capped per admission</span></div>
-        </div>
-        <div class="cse-result"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> <span data-i18n="co.ex2.result">Aiman pays just <strong>RM500</strong> — the community shares the remaining <strong>RM49,500</strong> of the bill.</span></div>
-      </div>
-      <div class="coshare-cap-box">
-        <div class="coshare-cap-main">
-          <div class="coshare-cap-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></div>
-          <div>
-            <h3 data-i18n="co.cap.t">Capped at <span class="coshare-cap-highlight">RM500</span> per admission</h3>
-            <p data-i18n="co.cap.d">No matter how large the approved bill, your co-share never exceeds RM500 per inpatient admission.</p>
-          </div>
-        </div>
-        <ul class="coshare-points">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> <span data-i18n="co.pt1">Calculated on the <strong>final approved bill</strong>, after TPA review</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> <span data-i18n="co.pt2">Applies <strong>per inpatient admission</strong>, on eligible bills only</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> <span data-i18n="co.pt3"><strong>No co-share</strong> for Government Hospital admissions</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> <span data-i18n="co.pt4">Your co-share is <strong>not shared</strong> with the community</span></li>
-        </ul>
+      <div class="sec-cta animate-fade-up">
+        <a href="#cta-final" class="btn btn-primary btn-large"><span data-i18n="band.co.btn">Join the Movement</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
       </div>
     </div>
   </section>
@@ -811,6 +773,9 @@
           <button class="tcard-nav" id="tcardNext" type="button" aria-label="Next testimonials"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></button>
         </div>
       </div>
+      <div class="sec-cta animate-fade-up">
+        <a href="#cta-final" class="btn btn-primary btn-large"><span data-i18n="band.ts.btn">Write Your Story</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+      </div>
     </div>
   </section>
 
@@ -943,6 +908,6 @@
     <span data-i18n="wa.float">Chat With Us</span>
   </a>
 
-  <script src="script.js?v=20260618b"></script>
+  <script src="script.js?v=20260618j"></script>
 </body>
 </html>
