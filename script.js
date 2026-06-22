@@ -333,18 +333,45 @@ document.addEventListener('DOMContentLoaded', () => {
     const legs = document.querySelectorAll('.topup-leg');
     if (!fill || !bal || !status) return;
 
-    const MAX = 150;
-    const TRIGGER = 45;       // matches the 30% marker on the meter
-    const STEP = 30;          // monthly sharing deducted per tick
+    const TRIGGER = 75;       // fixed auto top-up threshold (RM75) for both packages
+    const STEP = 30;          // same monthly deduction for both — Deluxe just lasts longer
+    let MAX = 150;
     let v = MAX;
     let phase = 'deduct';
     let timer = null;
+    let monthIdx = 0;
 
+    const maxEls = document.querySelectorAll('.topup-maxval');
+    const pkgBtns = document.querySelectorAll('.topup-pkg-btn');
+    const markEl = document.getElementById('topupMark');
+    function applyPackage(max) {
+      MAX = max;
+      v = MAX; phase = 'deduct'; monthIdx = 0;
+      maxEls.forEach(e => { e.textContent = 'RM' + max; });
+      if (markEl) markEl.style.left = (TRIGGER / max * 100) + '%';
+      pkgBtns.forEach(b => b.classList.toggle('active', parseInt(b.dataset.max, 10) === max));
+      setLeg('deduct');
+      status.innerHTML = st('at.status.deduct');
+      render();
+    }
+    pkgBtns.forEach(b => b.addEventListener('click', () => applyPackage(parseInt(b.dataset.max, 10))));
+
+    const FALLBACK_MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+    function monthName() {
+      const m = (window.wkT && window.wkT('at.months'));
+      const arr = (Array.isArray(m) && m.length === 12) ? m : FALLBACK_MONTHS;
+      return arr[monthIdx % 12];
+    }
     function setLeg(p) {
       legs.forEach(l => l.classList.toggle('active', l.dataset.phase === p));
     }
     function st(key) {
       return '<span class="topup-dot"></span> ' + (window.wkT ? window.wkT(key) : '');
+    }
+    function stDeduct() {
+      const mn = monthName();
+      monthIdx = (monthIdx + 1) % 12;
+      return '<span class="topup-dot"></span> ' + mn + ' · ' + (window.wkT ? window.wkT('at.status.deduct') : '');
     }
     function render() {
       fill.style.width = (v / MAX * 100) + '%';
@@ -360,7 +387,7 @@ document.addEventListener('DOMContentLoaded', () => {
           status.innerHTML = st('at.status.trigger');
           setLeg('trigger');
         } else {
-          status.innerHTML = st('at.status.deduct');
+          status.innerHTML = stDeduct();
           setLeg('deduct');
         }
       } else if (phase === 'trigger') {
@@ -370,17 +397,16 @@ document.addEventListener('DOMContentLoaded', () => {
         setLeg('restore');
       } else {
         phase = 'deduct';
-        status.innerHTML = '<span class="topup-dot"></span> Monthly sharing deducted…';
+        status.innerHTML = stDeduct();
         setLeg('deduct');
       }
       render();
     }
 
-    render();
-    setLeg('deduct');
+    applyPackage(150);
 
     // Only run the loop while the section is in view
-    const simSection = document.querySelector('.autotop');
+    const simSection = document.querySelector('.sharing-topup') || document.querySelector('.sharing-account');
     if (simSection && 'IntersectionObserver' in window) {
       const obs = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -396,6 +422,25 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
       timer = setInterval(tick, 1500);
     }
+  })();
+
+  // ====== COB TOGGLE — transforms the example cards ======
+  (function () {
+    const btns = document.querySelectorAll('.cs-cap-btn');
+    if (!btns.length) return;
+    const numSwaps = document.querySelectorAll('.cs-swap[data-off]');
+    const txtSwaps = document.querySelectorAll('[data-i18n-on]');
+    function setCob(on) {
+      btns.forEach(b => b.classList.toggle('active', (b.dataset.cob === 'on') === on));
+      numSwaps.forEach(el => { el.textContent = on ? el.dataset.on : el.dataset.off; });
+      txtSwaps.forEach(el => {
+        const key = on ? el.dataset.i18nOn : el.dataset.i18nOff;
+        if (!key) return;
+        el.setAttribute('data-i18n', key);
+        if (window.wkT) el.innerHTML = window.wkT(key);
+      });
+    }
+    btns.forEach(b => b.addEventListener('click', () => setCob(b.dataset.cob === 'on')));
   })();
 
   // ====== TESTIMONIAL CAROUSEL ======

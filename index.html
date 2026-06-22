@@ -10,8 +10,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=20260618o" />
-  <script src="i18n.js?v=20260618o"></script>
+  <link rel="stylesheet" href="styles.css?v=20260622p" />
+  <script src="i18n.js?v=20260622p"></script>
 </head>
 <body>
 
@@ -159,46 +159,10 @@
     </div>
   </section>
 
-  <!-- ====== IMPACT COUNTERS ====== -->
-  <section class="impact" id="impact">
-    <div class="impact-bg"><div class="impact-shape impact-shape-1"></div><div class="impact-shape impact-shape-2"></div></div>
-    <div class="container">
-      <div class="sec-head section-header-white">
-        <span class="tag section-tag-light" data-i18n="impact.tag">Community Impact</span>
-        <h2 data-i18n="impact.title">Trusted by Our <br /><span class="gradient-text-light">Growing Community</span></h2>
-      </div>
-      <!-- TODO(client): Confirm these live figures before publishing: members 8000+, shared RM3.8M, hospital 142, clinic 856. -->
-      <div class="impact-featured">
-        <div class="counter-card counter-card-hero">
-          <div class="counter-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
-          <div class="counter-number" data-target="8000" data-suffix="+">0</div>
-          <div class="counter-label" data-i18n="impact.members">Total Members</div>
-        </div>
-      </div>
-      <div class="counters-grid">
-        <div class="counter-card">
-          <div class="counter-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M10.5 20.5 3.5 13.5a5 5 0 0 1 7-7l7 7a5 5 0 0 1-7 7z"/><line x1="8.5" y1="8.5" x2="15.5" y2="15.5"/></svg></div>
-          <div class="counter-number" data-target="3.8" data-decimals="1" data-suffix="M" data-prefix="RM">0</div>
-          <div class="counter-label" data-i18n="impact.bills">Total Medical Bills Shared</div>
-        </div>
-        <div class="counter-card">
-          <div class="counter-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V5a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v16"/><path d="M11 7h0M11 11h0M11 15h0"/></svg></div>
-          <div class="counter-number" data-target="142">0</div>
-          <div class="counter-label" data-i18n="impact.hospital">Hospital Cases Approved</div>
-        </div>
-        <div class="counter-card">
-          <div class="counter-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
-          <div class="counter-number" data-target="856">0</div>
-          <div class="counter-label" data-i18n="impact.clinic">Clinic Cases Approved</div>
-        </div>
-      </div>
-      <p class="impact-sub" data-i18n="impact.sub">Every number represents a member who received support when they needed it most.</p>
-    </div>
-  </section>
-
   <!-- ====== COVERAGE ====== -->
   <section class="coverage" id="coverage">
     <div class="container">
+      <p class="section-bridge" data-i18n="coverage.bridge">First, here's everything you're protected for.</p>
       <div class="sec-head">
         <span class="tag" data-i18n="coverage.tag">Coverage</span>
         <h2 data-i18n="coverage.title">Up to <span class="gradient-text">RM1,000,000</span> Medical Coverage</h2>
@@ -231,7 +195,7 @@
         </div>
         <div class="coverage-card animate-fade-up">
           <div class="tile tile-teal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17h2l1-3h12l1 3h2"/><path d="M5 17v2a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-2M16 17v2a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-2"/><path d="M7 14V7a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v7"/><path d="M12 8v4M10 10h4"/></svg></div>
-          <div class="cov-amount" data-i18n="coverage.c5.amt">Up to RM10,000</div>
+          <div class="cov-amount" data-i18n="coverage.c5.amt">Included</div>
           <h3 data-i18n="coverage.c5.t">Accidental Injury Treatment</h3>
           <p data-i18n="coverage.c5.d">Support for accidental injuries and related medical treatment.</p>
         </div>
@@ -318,9 +282,17 @@
   <!-- ====== HOW COST-SHARING WORKS ====== -->
   <section class="cost-sharing" id="how-it-works">
     <div class="container">
+      <p class="section-bridge section-bridge-light" data-i18n="cs.bridge">But how can it cost so little? Here's the simple idea.</p>
       <div class="sec-head">
         <h2 class="on-dark" data-i18n="cs.title">How <span class="gradient-text">Cost-Sharing</span> Works</h2>
         <p class="section-desc on-dark-sub" data-i18n="cs.desc">Each month, the total approved medical bills of hospitalised members are shared fairly across all active members. Your contribution rises and falls with the community's actual needs — and is always capped, so you are never overcharged.</p>
+      </div>
+
+      <div class="cs-cob animate-fade-up">
+        <div class="cs-cap-toggle" role="group">
+          <button type="button" class="cs-cap-btn active" data-cob="off" data-i18n="cs.cap.opt1">Hospitalisation Only</button>
+          <button type="button" class="cs-cap-btn" data-cob="on" data-i18n="cs.cap.opt2">With COB (+RM15)</button>
+        </div>
       </div>
 
       <div class="cs-examples">
@@ -331,11 +303,11 @@
             <span class="cs-op">÷</span>
             <div class="cs-node"><span class="cs-node-label" data-i18n="cs.lbl.activemembers">Active Members</span><span class="cs-node-val">8,000</span><span class="cs-node-sub" data-i18n="cs.sub.thismonth">this month</span></div>
             <span class="cs-op">=</span>
-            <div class="cs-node cs-node-result"><span class="cs-node-label" data-i18n="cs.lbl.sharingcost">Sharing Cost</span><span class="cs-node-val">RM12.50</span><span class="cs-node-sub" data-i18n="cs.sub.permember">per member</span></div>
+            <div class="cs-node cs-node-result"><span class="cs-node-label" data-i18n="cs.lbl.sharingcost">Sharing Cost</span><span class="cs-node-val cs-swap" data-off="RM12.50" data-on="RM27.50">RM12.50</span><span class="cs-node-sub" data-i18n="cs.sub.permember" data-i18n-off="cs.sub.permember" data-i18n-on="cs.sub.inclcob">per member</span></div>
           </div>
           <div class="cs-outcome">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-            <div class="cs-outcome-text"><b data-i18n="cs.ex1.outcome.t">You pay just RM12.50 this month</b><span data-i18n="cs.ex1.outcome.d">A RM100,000 hospital bill, split across 8,000 members, costs each person about the price of a coffee.</span></div>
+            <div class="cs-outcome-text"><b data-i18n="cs.ex1.outcome.t" data-i18n-off="cs.ex1.outcome.t" data-i18n-on="cs.ex1.outcome.t.cob">You pay just RM12.50 this month</b><span data-i18n="cs.ex1.outcome.d" data-i18n-off="cs.ex1.outcome.d" data-i18n-on="cs.ex1.outcome.d.cob">A RM100,000 hospital bill, split across 8,000 members, costs each person about the price of a coffee.</span></div>
           </div>
         </div>
         <div class="cs-example cs-example-highlight animate-fade-up" data-delay="80">
@@ -347,11 +319,11 @@
             <span class="cs-op">=</span>
             <div class="cs-node cs-node-result"><span class="cs-node-label" data-i18n="cs.lbl.sharingcost">Sharing Cost</span><span class="cs-node-val cs-strike">RM100</span><span class="cs-node-sub" data-i18n="cs.sub.beforecap">before cap</span></div>
             <span class="cs-op">→</span>
-            <div class="cs-node cs-node-cap"><span class="cs-node-label" data-i18n="cs.lbl.youpayonly">You Pay Only</span><span class="cs-node-val">RM60</span><span class="cs-node-sub" data-i18n="cs.sub.cappedmonth">capped per month</span></div>
+            <div class="cs-node cs-node-cap"><span class="cs-node-label" data-i18n="cs.lbl.youpayonly">You Pay Only</span><span class="cs-node-val cs-swap" data-off="RM60" data-on="RM75">RM60</span><span class="cs-node-sub" data-i18n="cs.sub.cappedmonth">capped per month</span></div>
           </div>
           <div class="cs-outcome cs-outcome-cap">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-            <div class="cs-outcome-text"><b data-i18n="cs.ex2.outcome.t">You still pay only RM60 — never more</b><span data-i18n="cs.ex2.outcome.d">Even in a high-claim month where the share works out to RM100, your monthly contribution is capped at RM60. The remaining RM40 is carried forward, so your cost stays predictable.</span></div>
+            <div class="cs-outcome-text"><b data-i18n="cs.ex2.outcome.t" data-i18n-off="cs.ex2.outcome.t" data-i18n-on="cs.ex2.outcome.t.cob">You still pay only RM60 — never more</b><span data-i18n="cs.ex2.outcome.d" data-i18n-off="cs.ex2.outcome.d" data-i18n-on="cs.ex2.outcome.d.cob">Even in a high-claim month where the share works out to RM100, your monthly contribution is capped at RM60. The remaining RM40 is carried forward, so your cost stays predictable.</span></div>
           </div>
         </div>
         <div class="cs-example animate-fade-up" data-delay="160">
@@ -361,11 +333,11 @@
             <span class="cs-op">÷</span>
             <div class="cs-node"><span class="cs-node-label" data-i18n="cs.lbl.activemembers">Active Members</span><span class="cs-node-val">8,000</span><span class="cs-node-sub" data-i18n="cs.sub.thismonth">this month</span></div>
             <span class="cs-op">=</span>
-            <div class="cs-node cs-node-result"><span class="cs-node-label" data-i18n="cs.lbl.sharingcost">Sharing Cost</span><span class="cs-node-val">RM0</span><span class="cs-node-sub" data-i18n="cs.sub.permember">per member</span></div>
+            <div class="cs-node cs-node-result"><span class="cs-node-label" data-i18n="cs.lbl.sharingcost">Sharing Cost</span><span class="cs-node-val cs-swap" data-off="RM0" data-on="RM15">RM0</span><span class="cs-node-sub" data-i18n="cs.sub.permember" data-i18n-off="cs.sub.permember" data-i18n-on="cs.sub.cobonly">per member</span></div>
           </div>
           <div class="cs-outcome">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-            <div class="cs-outcome-text"><b data-i18n="cs.ex3.outcome.t">No claims means you pay nothing</b><span data-i18n="cs.ex3.outcome.d">When no members are hospitalised, there is nothing to share — so your contribution for the month is RM0.</span></div>
+            <div class="cs-outcome-text"><b data-i18n="cs.ex3.outcome.t" data-i18n-off="cs.ex3.outcome.t" data-i18n-on="cs.ex3.outcome.t.cob">No claims means you pay nothing</b><span data-i18n="cs.ex3.outcome.d" data-i18n-off="cs.ex3.outcome.d" data-i18n-on="cs.ex3.outcome.d.cob">When no members are hospitalised, there is nothing to share — so your contribution for the month is RM0.</span></div>
           </div>
         </div>
       </div>
@@ -392,35 +364,91 @@
     </div>
   </section>
 
-  <!-- ====== CHOOSE BENEFITS ====== -->
-  <section class="choose" id="choose">
+  <!-- ====== SHARING ACCOUNT (incl. AUTO TOP-UP) ====== -->
+  <section class="sharing-account" id="sharing-account">
     <div class="container">
+      <p class="section-bridge" data-i18n="sa.bridge">Wondering how your money is handled? Here's the behind-the-scenes.</p>
       <div class="sec-head">
-        <span class="tag" data-i18n="choose.tag">Choose Your Coverage</span>
-        <h2 data-i18n="choose.title">Choose The Benefits<br /><span class="gradient-text">That Suit You</span></h2>
-        <p class="section-desc" data-i18n="choose.desc">Select the protection that meets your needs.</p>
+        <span class="tag" data-i18n="sa.tag">Sharing Account</span>
+        <h2 data-i18n="sa.title">Your Sharing Account, <span class="gradient-text">Fully Owned by You</span></h2>
+        <p class="section-desc" data-i18n="sa.desc">Think of your Sharing Account as your own wallet — money you own, not a fee. It funds your monthly medical cost-sharing and is safeguarded by a licensed Trustee.</p>
       </div>
-      <div class="choose-grid">
-        <div class="choose-card animate-fade-up">
-          <span class="choose-badge choose-badge-1" data-i18n="choose.opt1.badge">Option 1</span>
-          <h3 data-i18n="choose.opt1.t">Hospitalisation Only</h3>
-          <p class="choose-sub" data-i18n="choose.opt1.sub">Hospitalisation protection only</p>
-          <div class="choose-price"><span data-i18n="choose.sharing">Sharing</span><b>RM0 – RM60</b><small data-i18n="choose.permonth">/ month</small></div>
-          <ul class="choose-list">
-            <li><span class="ico ico-ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><div><b data-i18n="choose.opt1.f1.t">Hospitalisation Benefit</b><span data-i18n="choose.opt1.f1.d">Applicable when admitted to hospital</span></div></li>
-            <li><span class="ico ico-no"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span><div><b data-i18n="choose.opt1.f2.t">No Conditional Outpatient Benefit</b><span data-i18n="choose.opt1.f2.d">No outpatient clinic or panel benefit</span></div></li>
-          </ul>
+      <div class="packages-grid">
+        <div class="package-card package-standard animate-fade-up">
+          <div class="package-header">
+            <div class="tile tile-navy"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v3"/><path d="M3 8h18v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M16 12h2"/></svg></div>
+            <div><h3 data-i18n="sa.std.name">Standard Package</h3><span class="package-topup"><span data-i18n="sa.autotopupto">Auto Top-Up to</span> <b>RM150</b></span></div>
+          </div>
+          <div class="package-table">
+            <div class="package-trow"><span class="package-trow-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></span><span class="package-trow-label" data-i18n="sa.row.annual">Annual Limit</span><span class="package-trow-val">RM1,000,000</span></div>
+            <div class="package-trow"><span class="package-trow-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6h11a4 4 0 0 1 4 4v2"/><line x1="3" y1="18" x2="21" y2="18"/><line x1="3" y1="12" x2="3" y2="7"/><path d="M6.5 9.3h2.4M7.7 8.1v2.4"/></svg></span><span class="package-trow-label" data-i18n="sa.row.room">Room &amp; Board</span><span class="package-trow-val"><span data-i18n="sa.std.room">RM150 / day</span></span></div>
+            <div class="package-trow"><span class="package-trow-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="2.4"/><path d="M6 9v6M18 9v6"/></svg></span><span class="package-trow-label" data-i18n="sa.row.cash">Daily Cash Allowance in Government Hospital</span><span class="package-trow-val"><span data-i18n="sa.std.cash">RM50 / day</span></span></div>
+            <div class="package-trow"><span class="package-trow-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 13c2-2.5 3-4.3 3-6.5a3 3 0 0 0-6 0c0 2.2 1 4 3 6.5z"/><path d="M10.4 11.4 8 21l4-3 4 3-2.4-9.6"/></svg></span><span class="package-trow-label" data-i18n="sa.row.cancer">Outpatient Cancer Treatment</span><span class="package-trow-val">RM100,000</span></div>
+            <div class="package-trow"><span class="package-trow-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.2"/><path d="M5.5 20a6.5 6.5 0 0 1 13 0z"/></svg></span><span class="package-trow-label" data-i18n="sa.row.prehosp">Pre-Hospital Tests &amp; Diagnostics</span><span class="package-trow-val package-trow-muted" data-i18n="sa.na">N/A</span></div>
+            <div class="package-trow"><span class="package-trow-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M2 16V8a1 1 0 0 1 1-1h10v9"/><path d="M13 10h4l4 4.5V16h-2"/><circle cx="6" cy="18" r="1.8"/><circle cx="17" cy="18" r="1.8"/><path d="M5 10.5h3M6.5 9v3"/></svg></span><span class="package-trow-label" data-i18n="sa.row.ambulance">Ambulance Fee</span><span class="package-trow-val">RM250</span></div>
+          </div>
         </div>
-        <div class="choose-card choose-card-feat animate-fade-up" data-delay="100">
-          <span class="choose-badge choose-badge-2" data-i18n="choose.opt2.badge">Option 2</span>
-          <h3 data-i18n="choose.opt2.t">Hospitalisation + COB</h3>
-          <p class="choose-sub" data-i18n="choose.opt2.sub">Hospitalisation + Conditional Outpatient Benefit</p>
-          <div class="choose-addon" data-i18n="choose.opt2.addon">Add only <strong>RM15</strong> / month</div>
-          <div class="choose-price"><span data-i18n="choose.sharing">Sharing</span><b>RM15 – RM75</b><small data-i18n="choose.permonth">/ month</small></div>
-          <ul class="choose-list">
-            <li><span class="ico ico-ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><div><b data-i18n="choose.opt2.f1.t">Hospitalisation Benefit</b><span data-i18n="choose.opt2.f1.d">Applicable when admitted to hospital</span></div></li>
-            <li><span class="ico ico-ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><div><b data-i18n="choose.opt2.f2.t">Conditional Outpatient Benefit (COB)</b><span data-i18n="choose.opt2.f2.d">Outpatient clinic &amp; panel benefit included</span></div></li>
-          </ul>
+        <div class="package-card package-deluxe animate-fade-up" data-delay="100">
+          <div class="package-badge" data-i18n="sa.premium">Premium</div>
+          <div class="package-header">
+            <div class="tile tile-teal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l4 6-10 12L2 9z"/><path d="M2 9h20"/><path d="M12 3 9 9l3 12 3-12-3-6z"/></svg></div>
+            <div><h3 data-i18n="sa.dlx.name">Deluxe Package</h3><span class="package-topup"><span data-i18n="sa.autotopupto">Auto Top-Up to</span> <b>RM300</b></span></div>
+          </div>
+          <div class="package-table">
+            <div class="package-trow"><span class="package-trow-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></span><span class="package-trow-label" data-i18n="sa.row.annual">Annual Limit</span><span class="package-trow-val">RM1,000,000</span></div>
+            <div class="package-trow"><span class="package-trow-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6h11a4 4 0 0 1 4 4v2"/><line x1="3" y1="18" x2="21" y2="18"/><line x1="3" y1="12" x2="3" y2="7"/><path d="M6.5 9.3h2.4M7.7 8.1v2.4"/></svg></span><span class="package-trow-label" data-i18n="sa.row.room">Room &amp; Board</span><span class="package-trow-val"><span data-i18n="sa.dlx.room">RM250 / day</span></span></div>
+            <div class="package-trow"><span class="package-trow-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="2.4"/><path d="M6 9v6M18 9v6"/></svg></span><span class="package-trow-label" data-i18n="sa.row.cash">Daily Cash Allowance in Government Hospital</span><span class="package-trow-val"><span data-i18n="sa.dlx.cash">RM100 / day</span></span></div>
+            <div class="package-trow"><span class="package-trow-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 13c2-2.5 3-4.3 3-6.5a3 3 0 0 0-6 0c0 2.2 1 4 3 6.5z"/><path d="M10.4 11.4 8 21l4-3 4 3-2.4-9.6"/></svg></span><span class="package-trow-label" data-i18n="sa.row.cancer">Outpatient Cancer Treatment</span><span class="package-trow-val">RM100,000</span></div>
+            <div class="package-trow"><span class="package-trow-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.2"/><path d="M5.5 20a6.5 6.5 0 0 1 13 0z"/></svg></span><span class="package-trow-label" data-i18n="sa.row.prehosp">Pre-Hospital Tests &amp; Diagnostics</span><span class="package-trow-val">RM5,000</span></div>
+            <div class="package-trow"><span class="package-trow-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M2 16V8a1 1 0 0 1 1-1h10v9"/><path d="M13 10h4l4 4.5V16h-2"/><circle cx="6" cy="18" r="1.8"/><circle cx="17" cy="18" r="1.8"/><path d="M5 10.5h3M6.5 9v3"/></svg></span><span class="package-trow-label" data-i18n="sa.row.ambulance">Ambulance Fee</span><span class="package-trow-val" data-i18n="sa.dlx.ambulance">As charged</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="sharing-note">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+        <span data-i18n="sa.note">Actual monthly sharing depends on approved medical cases for the month.</span>
+      </div>
+
+      <div class="sharing-topup animate-fade-up">
+        <div class="topup-sim">
+          <h3 class="autotop-col-title" data-i18n="at.simtitle">Auto Top-Up in Action</h3>
+          <div class="topup-grid">
+            <div class="topup-left">
+              <div class="topup-pkg-toggle" role="group">
+                <button type="button" class="topup-pkg-btn active" data-max="150">Standard · RM150</button>
+                <button type="button" class="topup-pkg-btn" data-max="300">Deluxe · RM300</button>
+              </div>
+              <div class="topup-card">
+                <div class="topup-card-top">
+                  <span class="topup-card-label"><span class="topup-card-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg></span> <span data-i18n="at.balance">Sharing Account Balance</span></span>
+                  <span class="topup-bal"><b id="topupBal">RM150</b> <em>/ <span class="topup-maxval">RM150</span></em></span>
+                </div>
+                <div class="topup-meter"><div class="topup-fill" id="topupFill"></div><span class="topup-mark" id="topupMark"></span></div>
+                <div class="topup-meterlabels"><span>RM0</span><span class="topup-maxval">RM150</span></div>
+                <div class="topup-trigger-note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v6m0 0 3-3m-3 3L9 5"/><path d="M3 13a9 9 0 0 0 18 0"/></svg> <span data-i18n="at.trigger">Auto top-up triggers when below</span> <b>RM75</b></div>
+                <div class="topup-status" id="topupStatus"><span class="topup-dot"></span> <span data-i18n="at.status.deduct">Monthly sharing deducted…</span></div>
+              </div>
+            </div>
+            <div class="topup-side">
+              <div class="topup-legend">
+                <div class="topup-leg" data-phase="deduct"><span class="topup-leg-num">1</span> <span data-i18n="at.leg1">Monthly sharing is deducted from your balance.</span></div>
+                <div class="topup-leg" data-phase="trigger"><span class="topup-leg-num">2</span> <span data-i18n="at.leg2">When it drops below the trigger, auto top-up activates.</span></div>
+                <div class="topup-leg" data-phase="restore"><span class="topup-leg-num">3</span> <span data-i18n="at.leg3">Your balance is instantly restored — protection never lapses.</span></div>
+              </div>
+              <p class="topup-foot" data-i18n="at.foot">Standard tops up to <b>RM150</b> · Deluxe tops up to <b>RM300</b></p>
+            </div>
+          </div>
+
+          <div class="topup-or"><span data-i18n="at.or">or</span></div>
+
+          <div class="topup-fixed">
+            <div class="topup-fixed-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/><line x1="6" y1="15" x2="10" y2="15"/></svg></div>
+            <div class="topup-fixed-body">
+              <span class="topup-fixed-tag" data-i18n="at.fixed.tag">Prefer a fixed amount?</span>
+              <h3 data-i18n="at.fixed.t">Or choose the <span class="topup-fixed-amt">RM75</span> Fixed Monthly Option</h3>
+              <p data-i18n="at.fixed.d">Rather not have your contribution change from month to month? You can opt for a simple <strong>flat RM75 every month</strong> — fully predictable budgeting with the same community protection, so there are never any surprises.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -429,6 +457,7 @@
   <!-- ====== MEMBERSHIP PLANS ====== -->
   <section class="plans" id="plans">
     <div class="container">
+      <p class="section-bridge" data-i18n="plans.bridge">Like what you see? Choose how you'd like to pay.</p>
       <div class="sec-head">
         <span class="tag" data-i18n="plans.tag">Membership</span>
         <h2 data-i18n="plans.title">Find The Right <span class="gradient-text">Membership For You</span></h2>
@@ -483,111 +512,59 @@
     </div>
   </section>
 
-  <!-- ====== SHARING ACCOUNT ====== -->
-  <section class="sharing-account" id="sharing-account">
+  <!-- ====== SUMMARY & TIMELINE ====== -->
+  <section class="pay-summary" id="pay-summary">
     <div class="container">
+      <p class="section-bridge section-bridge-light" data-i18n="pay.bridge">So what does all this actually cost you?</p>
       <div class="sec-head">
-        <span class="tag" data-i18n="sa.tag">Sharing Account</span>
-        <h2 data-i18n="sa.title">Your Sharing Account, <span class="gradient-text">Fully Owned by You</span></h2>
-        <p class="section-desc" data-i18n="sa.desc">Your Sharing Account is used to participate in monthly medical cost-sharing within the community. The funds are owned solely by you and managed by a licensed Trustee.</p>
+        <span class="tag" data-i18n="pay.tag">Your Costs, Made Simple</span>
+        <h2 data-i18n="pay.title">So... <span class="gradient-text">What Do You Actually Pay?</span></h2>
+        <p class="section-desc" data-i18n="pay.desc">No surprises. Your cost comes down to just a few small, predictable parts.</p>
       </div>
-      <div class="packages-grid">
-        <div class="package-card package-standard animate-fade-up">
-          <div class="package-header">
-            <div class="tile tile-navy"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v3"/><path d="M3 8h18v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M16 12h2"/></svg></div>
-            <div><h3 data-i18n="sa.std.name">Standard Package</h3><span class="package-topup"><span data-i18n="sa.autotopupto">Auto Top-Up to</span> <b>RM150</b></span></div>
-          </div>
-          <div class="package-table">
-            <div class="package-trow"><span class="package-trow-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></span><span class="package-trow-label" data-i18n="sa.row.annual">Annual Limit</span><span class="package-trow-val">RM1,000,000</span></div>
-            <div class="package-trow"><span class="package-trow-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6h11a4 4 0 0 1 4 4v2"/><line x1="3" y1="18" x2="21" y2="18"/><line x1="3" y1="12" x2="3" y2="7"/><path d="M6.5 9.3h2.4M7.7 8.1v2.4"/></svg></span><span class="package-trow-label" data-i18n="sa.row.room">Room &amp; Board</span><span class="package-trow-val"><span data-i18n="sa.std.room">RM150 / day</span></span></div>
-            <div class="package-trow"><span class="package-trow-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="2.4"/><path d="M6 9v6M18 9v6"/></svg></span><span class="package-trow-label" data-i18n="sa.row.cash">Daily Cash Allowance in Government Hospital</span><span class="package-trow-val"><span data-i18n="sa.std.cash">RM50 / day</span></span></div>
-            <div class="package-trow"><span class="package-trow-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 13c2-2.5 3-4.3 3-6.5a3 3 0 0 0-6 0c0 2.2 1 4 3 6.5z"/><path d="M10.4 11.4 8 21l4-3 4 3-2.4-9.6"/></svg></span><span class="package-trow-label" data-i18n="sa.row.cancer">Outpatient Cancer Treatment</span><span class="package-trow-val">RM100,000</span></div>
-            <div class="package-trow"><span class="package-trow-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.2"/><path d="M5.5 20a6.5 6.5 0 0 1 13 0z"/></svg></span><span class="package-trow-label" data-i18n="sa.row.prehosp">Pre-Hospital Tests &amp; Diagnostics</span><span class="package-trow-val package-trow-muted" data-i18n="sa.na">N/A</span></div>
-            <div class="package-trow"><span class="package-trow-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M2 16V8a1 1 0 0 1 1-1h10v9"/><path d="M13 10h4l4 4.5V16h-2"/><circle cx="6" cy="18" r="1.8"/><circle cx="17" cy="18" r="1.8"/><path d="M5 10.5h3M6.5 9v3"/></svg></span><span class="package-trow-label" data-i18n="sa.row.ambulance">Ambulance Fee</span><span class="package-trow-val">RM250</span></div>
-          </div>
-        </div>
-        <div class="package-card package-deluxe animate-fade-up" data-delay="100">
-          <div class="package-badge" data-i18n="sa.premium">Premium</div>
-          <div class="package-header">
-            <div class="tile tile-teal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l4 6-10 12L2 9z"/><path d="M2 9h20"/><path d="M12 3 9 9l3 12 3-12-3-6z"/></svg></div>
-            <div><h3 data-i18n="sa.dlx.name">Deluxe Package</h3><span class="package-topup"><span data-i18n="sa.autotopupto">Auto Top-Up to</span> <b>RM300</b></span></div>
-          </div>
-          <div class="package-table">
-            <div class="package-trow"><span class="package-trow-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></span><span class="package-trow-label" data-i18n="sa.row.annual">Annual Limit</span><span class="package-trow-val">RM1,000,000</span></div>
-            <div class="package-trow"><span class="package-trow-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6h11a4 4 0 0 1 4 4v2"/><line x1="3" y1="18" x2="21" y2="18"/><line x1="3" y1="12" x2="3" y2="7"/><path d="M6.5 9.3h2.4M7.7 8.1v2.4"/></svg></span><span class="package-trow-label" data-i18n="sa.row.room">Room &amp; Board</span><span class="package-trow-val"><span data-i18n="sa.dlx.room">RM250 / day</span></span></div>
-            <div class="package-trow"><span class="package-trow-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="2.4"/><path d="M6 9v6M18 9v6"/></svg></span><span class="package-trow-label" data-i18n="sa.row.cash">Daily Cash Allowance in Government Hospital</span><span class="package-trow-val"><span data-i18n="sa.dlx.cash">RM100 / day</span></span></div>
-            <div class="package-trow"><span class="package-trow-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 13c2-2.5 3-4.3 3-6.5a3 3 0 0 0-6 0c0 2.2 1 4 3 6.5z"/><path d="M10.4 11.4 8 21l4-3 4 3-2.4-9.6"/></svg></span><span class="package-trow-label" data-i18n="sa.row.cancer">Outpatient Cancer Treatment</span><span class="package-trow-val">RM100,000</span></div>
-            <div class="package-trow"><span class="package-trow-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.2"/><path d="M5.5 20a6.5 6.5 0 0 1 13 0z"/></svg></span><span class="package-trow-label" data-i18n="sa.row.prehosp">Pre-Hospital Tests &amp; Diagnostics</span><span class="package-trow-val">RM5,000</span></div>
-            <div class="package-trow"><span class="package-trow-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M2 16V8a1 1 0 0 1 1-1h10v9"/><path d="M13 10h4l4 4.5V16h-2"/><circle cx="6" cy="18" r="1.8"/><circle cx="17" cy="18" r="1.8"/><path d="M5 10.5h3M6.5 9v3"/></svg></span><span class="package-trow-label" data-i18n="sa.row.ambulance">Ambulance Fee</span><span class="package-trow-val" data-i18n="sa.dlx.ambulance">As charged</span></div>
-          </div>
-        </div>
-      </div>
-      <div class="sharing-note">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
-        <span data-i18n="sa.note">Actual monthly sharing depends on approved medical cases for the month.</span>
-      </div>
-    </div>
-  </section>
 
-  <!-- ====== COST-SHARING & AUTO TOP-UP ====== -->
-  <section class="autotop" id="auto-top-up">
-    <div class="impact-bg"><div class="impact-shape impact-shape-1"></div><div class="impact-shape impact-shape-2"></div></div>
-    <div class="container">
-      <div class="sec-head section-header-white">
-        <span class="tag section-tag-light" data-i18n="at.tag">Cost-Sharing &amp; Auto Top-Up</span>
-        <h2 data-i18n="at.title">Set Up Once, <span class="gradient-text-light">Always Protected</span></h2>
-        <p class="section-desc" style="color:rgba(255,255,255,.82)" data-i18n="at.desc">Join once, complete a simple setup, and your medical cost-sharing runs on autopilot. Auto top-up quietly refills your Sharing Account so your protection never lapses.</p>
-      </div>
-      <div class="autotop-grid">
-        <div class="tl2 animate-fade-up">
-          <h3 class="autotop-col-title" data-i18n="at.steptitle">How It Works, Step by Step</h3>
-          <div class="tl2-list">
-            <span class="tl2-line"></span>
-            <div class="tl2-step">
-              <div class="tl2-node">1</div>
-              <div class="tl2-body"><span class="tl2-day" data-i18n="at.s1.day">Day 1</span><h4 data-i18n="at.s1.t">Join We Kongsi</h4><p data-i18n="at.s1.d">Register as a member in just a few minutes.</p></div>
-            </div>
-            <div class="tl2-step">
-              <div class="tl2-node">2</div>
-              <div class="tl2-body"><span class="tl2-day" data-i18n="at.s2.day">Setup</span><h4 data-i18n="at.s2.t">Fund Your Sharing Account</h4><p data-i18n="at.s2.d">Top up to RM150 (Standard) or RM300 (Deluxe) to start.</p></div>
-            </div>
-            <div class="tl2-step">
-              <div class="tl2-node">3</div>
-              <div class="tl2-body"><span class="tl2-day" data-i18n="at.s3.day">Day 1 – 90</span><h4 data-i18n="at.s3.t">Waiting Period</h4><p data-i18n="at.s3.d">No sharing is deducted during your first 90 days.</p></div>
-            </div>
-            <div class="tl2-step">
-              <div class="tl2-node">4</div>
-              <div class="tl2-body"><span class="tl2-day" data-i18n="at.s4.day">Day 91 Onwards</span><h4 data-i18n="at.s4.t">Sharing Begins</h4><p data-i18n="at.s4.d">Each month, only <strong>RM0 – RM60</strong> is shared, based on the community's approved cases.</p></div>
-            </div>
+      <div class="pay-twothings animate-fade-up">
+        <span class="pay-tt-eyebrow" data-i18n="pay.tt.eyebrow">You only ever pay two things</span>
+        <div class="pay-tt-flow">
+          <div class="pay-tt-card">
+            <span class="pay-tt-num">1</span>
+            <div class="pay-tt-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+            <h4 data-i18n="pay.tt.1.t">Membership</h4>
+            <p data-i18n="pay.tt.1.d">From RM30/month to join the community.</p>
+          </div>
+          <div class="pay-tt-plus" aria-hidden="true">+</div>
+          <div class="pay-tt-card">
+            <span class="pay-tt-num">2</span>
+            <div class="pay-tt-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12V7H5a2 2 0 0 1 0-4h14v4"/><path d="M3 5v14a2 2 0 0 0 2 2h16v-5"/><path d="M18 12a2 2 0 0 0 0 4h4v-4z"/></svg></div>
+            <h4 data-i18n="pay.tt.2.t">Sharing Account</h4>
+            <p data-i18n="pay.tt.2.d">A one-time top up of RM150 / RM300 — a wallet you fully own.</p>
           </div>
         </div>
-
-        <div class="topup-sim animate-fade-up" data-delay="120">
-          <h3 class="autotop-col-title" data-i18n="at.simtitle">Auto Top-Up in Action</h3>
-          <div class="topup-card">
-            <div class="topup-card-top">
-              <span class="topup-card-label"><span class="topup-card-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg></span> <span data-i18n="at.balance">Sharing Account Balance</span></span>
-              <span class="topup-bal"><b id="topupBal">RM150</b> <em>/ RM150</em></span>
-            </div>
-            <div class="topup-meter"><div class="topup-fill" id="topupFill"></div><span class="topup-mark"></span></div>
-            <div class="topup-meterlabels"><span>RM0</span><span class="topup-mark-txt" data-i18n="at.trigger">Top-up trigger</span><span>RM150</span></div>
-            <div class="topup-status" id="topupStatus"><span class="topup-dot"></span> <span data-i18n="at.status.deduct">Monthly sharing deducted…</span></div>
-          </div>
-          <div class="topup-legend">
-            <div class="topup-leg" data-phase="deduct"><span class="topup-leg-num">1</span> <span data-i18n="at.leg1">Monthly sharing is deducted from your balance.</span></div>
-            <div class="topup-leg" data-phase="trigger"><span class="topup-leg-num">2</span> <span data-i18n="at.leg2">When it drops below the trigger, auto top-up activates.</span></div>
-            <div class="topup-leg" data-phase="restore"><span class="topup-leg-num">3</span> <span data-i18n="at.leg3">Your balance is instantly restored — protection never lapses.</span></div>
-          </div>
-          <p class="topup-foot" data-i18n="at.foot">Standard tops up to <b>RM150</b> · Deluxe tops up to <b>RM300</b></p>
+        <div class="pay-tt-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg></div>
+        <div class="pay-tt-result">
+          <div class="pay-tt-result-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg></div>
+          <p data-i18n="pay.tt.result">That's it — only these two. Each month, your sharing (RM0 – RM60) is <strong>automatically deducted from your Sharing Account</strong>, and auto top-up keeps it filled. Nothing else to pay or remember.</p>
         </div>
       </div>
 
-      <div class="topup-fixed animate-fade-up">
-        <div class="topup-fixed-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/><line x1="6" y1="15" x2="10" y2="15"/></svg></div>
-        <div class="topup-fixed-body">
-          <span class="topup-fixed-tag" data-i18n="at.fixed.tag">Prefer a fixed amount?</span>
-          <h3 data-i18n="at.fixed.t">Or choose the <span class="topup-fixed-amt">RM75</span> Fixed Monthly Option</h3>
-          <p data-i18n="at.fixed.d">Rather not have your contribution change from month to month? You can opt for a simple <strong>flat RM75 every month</strong> — fully predictable budgeting with the same community protection, so there are never any surprises.</p>
+      <h3 class="pay-tl-title" data-i18n="pay.tl.title">Your first 90 days</h3>
+      <div class="pay-timeline">
+        <div class="pay-tl-step animate-fade-up">
+          <div class="pay-tl-node">1</div>
+          <span class="pay-tl-day" data-i18n="pay.s1.day">Day 1</span>
+          <h4 data-i18n="pay.s1.t">Pay Your Membership</h4>
+          <p data-i18n="pay.s1.d">A small membership fee to join the community — from RM30/month.</p>
+        </div>
+        <div class="pay-tl-step animate-fade-up" data-delay="100">
+          <div class="pay-tl-node">2</div>
+          <span class="pay-tl-day" data-i18n="pay.s2.day">Day 60</span>
+          <h4 data-i18n="pay.s2.t">Fund Your Sharing Account</h4>
+          <p data-i18n="pay.s2.d">Top up to RM150 (Standard) or RM300 (Deluxe) to start — and it stays your own money.</p>
+        </div>
+        <div class="pay-tl-step animate-fade-up" data-delay="200">
+          <div class="pay-tl-node">3</div>
+          <span class="pay-tl-day" data-i18n="pay.s3.day">Day 90</span>
+          <h4 data-i18n="pay.s3.t">Sharing Begins</h4>
+          <p data-i18n="pay.s3.d">After the 90-day waiting period, only RM0 – RM60 is shared each month, based on the community's approved cases.</p>
         </div>
       </div>
     </div>
@@ -598,7 +575,7 @@
     <div class="container">
       <div class="sec-head">
         <span class="tag" data-i18n="co.tag">Co-Share</span>
-        <h2 data-i18n="co.title">How <span class="gradient-text">Co-Share</span> Works</h2>
+        <h2 data-i18n="co.title">If You're Admitted, <span class="gradient-text">You Pay Just a Small Share</span></h2>
         <p class="section-desc" data-i18n="co.desc">When you're admitted as an inpatient, you pay a small co-share portion of the approved bill — and the community shares the rest. Your co-share is based on your age group and is always capped.</p>
       </div>
       <div class="coshare-layout animate-fade-up">
@@ -681,6 +658,43 @@
           </div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- ====== IMPACT COUNTERS ====== -->
+  <section class="impact" id="impact">
+    <div class="impact-bg"><div class="impact-shape impact-shape-1"></div><div class="impact-shape impact-shape-2"></div></div>
+    <div class="container">
+      <div class="sec-head section-header-white">
+        <span class="tag section-tag-light" data-i18n="impact.tag">Community Impact</span>
+        <h2 data-i18n="impact.title">Trusted by Our <br /><span class="gradient-text-light">Growing Community</span></h2>
+      </div>
+      <!-- TODO(client): Confirm these live figures before publishing: members 8000+, shared RM3.8M, hospital 142, clinic 856. -->
+      <div class="impact-featured">
+        <div class="counter-card counter-card-hero">
+          <div class="counter-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+          <div class="counter-number" data-target="8000" data-suffix="+">0</div>
+          <div class="counter-label" data-i18n="impact.members">Total Members</div>
+        </div>
+      </div>
+      <div class="counters-grid">
+        <div class="counter-card">
+          <div class="counter-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M10.5 20.5 3.5 13.5a5 5 0 0 1 7-7l7 7a5 5 0 0 1-7 7z"/><line x1="8.5" y1="8.5" x2="15.5" y2="15.5"/></svg></div>
+          <div class="counter-number" data-target="3.8" data-decimals="1" data-suffix="M" data-prefix="RM">0</div>
+          <div class="counter-label" data-i18n="impact.bills">Total Medical Bills Shared</div>
+        </div>
+        <div class="counter-card">
+          <div class="counter-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V5a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v16"/><path d="M11 7h0M11 11h0M11 15h0"/></svg></div>
+          <div class="counter-number" data-target="142">0</div>
+          <div class="counter-label" data-i18n="impact.hospital">Hospital Cases Approved</div>
+        </div>
+        <div class="counter-card">
+          <div class="counter-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
+          <div class="counter-number" data-target="856">0</div>
+          <div class="counter-label" data-i18n="impact.clinic">Clinic Cases Approved</div>
+        </div>
+      </div>
+      <p class="impact-sub" data-i18n="impact.sub">Every number represents a member who received support when they needed it most.</p>
     </div>
   </section>
 
@@ -908,6 +922,6 @@
     <span data-i18n="wa.float">Chat With Us</span>
   </a>
 
-  <script src="script.js?v=20260618o"></script>
+  <script src="script.js?v=20260622p"></script>
 </body>
 </html>
