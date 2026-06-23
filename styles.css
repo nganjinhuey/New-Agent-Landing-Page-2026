@@ -180,7 +180,11 @@ body.lang-ms .hero{background-image:url('bmhero.jpg')}
 /* ====================================================
    REALITY (stats)
    ==================================================== */
-.reality{background:linear-gradient(180deg,#0b2926 0%,#10342e 46%,#17473f 100%);position:relative;z-index:2}
+.reality{background:radial-gradient(680px 460px at 60% 46%,rgba(232,163,61,.10),transparent 64%),linear-gradient(180deg,#0b2926 0%,#10342e 46%,#17473f 100%);position:relative;z-index:2;overflow:hidden}
+.reality::before{content:"";position:absolute;top:-150px;right:-70px;width:560px;height:560px;border-radius:50%;background:radial-gradient(circle,rgba(255,91,91,.26),transparent 68%);z-index:1;pointer-events:none;animation:realityGlow 16s ease-in-out infinite}
+.reality::after{content:"";position:absolute;bottom:-170px;left:-130px;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(74,157,142,.30),transparent 70%);z-index:1;pointer-events:none;animation:realityGlow 20s ease-in-out infinite reverse}
+@keyframes realityGlow{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(26px,-22px) scale(1.06)}}
+@media(prefers-reduced-motion:reduce){.reality::before,.reality::after{animation:none}}
 .reality .container{position:relative;z-index:5}
 .reality-card{margin-top:0;background:transparent;border:none;box-shadow:none;padding:0;position:relative;z-index:5}
 .reality-top{display:grid;grid-template-columns:1.08fr .92fr;gap:clamp(30px,5vw,56px);align-items:center}
