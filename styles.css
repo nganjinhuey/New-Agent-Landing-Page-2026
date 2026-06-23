@@ -537,12 +537,13 @@ body.lang-ms .hero{background-image:url('bmhero.jpg')}
 .pay-tl-step h4{color:#fff;font-size:1.08rem;margin-bottom:8px}
 .pay-tl-step p{color:rgba(255,255,255,.74);font-size:.9rem;line-height:1.55}
 @media(max-width:760px){
-  .pay-timeline{grid-template-columns:1fr;gap:0;max-width:440px}
-  .pay-timeline::before{left:25px;right:auto;top:30px;bottom:30px;width:2px;height:auto}
-  .pay-tl-step{display:grid;grid-template-columns:52px 1fr;gap:16px;text-align:left;padding:0 0 26px}
-  .pay-tl-node{margin:0}
-  .pay-tl-day{margin-bottom:4px}
-  .pay-tl-step h4{margin-bottom:4px}
+  .pay-timeline{grid-template-columns:1fr;gap:0;max-width:480px}
+  .pay-timeline::before{left:25px;right:auto;top:26px;bottom:40px;width:2px;height:auto}
+  .pay-tl-step{display:grid;grid-template-columns:52px 1fr;column-gap:18px;text-align:left;padding:0 0 30px}
+  .pay-tl-node{margin:0;grid-column:1;grid-row:1 / span 3;align-self:start}
+  .pay-tl-day{grid-column:2;margin:0 0 4px}
+  .pay-tl-step h4{grid-column:2;margin:0 0 6px}
+  .pay-tl-step p{grid-column:2;margin:0}
 }
 .pay-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-bottom:30px}
 .pay-card{position:relative;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:36px 28px 30px;box-shadow:var(--shadow-sm);text-align:center;transition:.3s}
