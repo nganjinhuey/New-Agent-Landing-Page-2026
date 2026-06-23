@@ -874,7 +874,10 @@ body.lang-ms .hero{background-image:url('bmhero.jpg')}
 .cs-cap-label{color:rgba(255,255,255,.78);font-size:.95rem}
 .cs-cap-amount{font-family:'Poppins',sans-serif;font-weight:800;font-size:clamp(2.4rem,5vw,3.3rem);color:#fff;line-height:1}
 .cs-cap-sub{color:#86d6c6;font-family:'Poppins',sans-serif;font-weight:600;font-size:.88rem}
-@media(max-width:480px){.cs-cap-toggle{display:flex;flex-direction:column;width:100%}}
+@media(max-width:520px){
+  .cs-cap-toggle{display:flex;width:100%;max-width:430px;margin-left:auto;margin-right:auto}
+  .cs-cap-btn{flex:1;padding:11px 10px;font-size:.82rem;white-space:normal;line-height:1.25}
+}
 /* Fun affordability badge */
 .cs-afford{position:relative;z-index:2;display:flex;align-items:center;gap:26px;flex-wrap:wrap;justify-content:center;max-width:880px;margin:0 auto clamp(40px,6vw,58px);background:linear-gradient(135deg,#fff6e8,#ffe7c8);border:1px solid rgba(255,255,255,.6);border-radius:26px;padding:26px 32px;box-shadow:0 36px 72px -34px rgba(0,0,0,.55)}
 .cs-afford-cup{width:74px;height:74px;border-radius:20px;background:linear-gradient(140deg,#f0a93c,#e2872a);color:#fff;display:grid;place-items:center;flex:none;box-shadow:0 16px 30px -14px rgba(226,135,42,.85);transform:rotate(-5deg)}
