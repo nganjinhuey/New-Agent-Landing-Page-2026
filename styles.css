@@ -150,6 +150,7 @@ body.lang-zh{letter-spacing:0}
    ==================================================== */
 .hero{position:relative;min-height:90vh;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden;background:url('hero.jpg') center/cover no-repeat fixed;color:#fff}
 body.lang-ms .hero{background-image:url('bmhero.jpg')}
+@media(max-width:900px){.hero{background-attachment:scroll}}
 .hero-overlay{position:absolute;inset:0;z-index:1;background:
   radial-gradient(115% 90% at 50% 44%,rgba(7,16,28,.34) 0%,rgba(7,16,28,.62) 64%,rgba(7,16,28,.82) 100%),
   linear-gradient(180deg,rgba(9,19,33,.62) 0%,rgba(11,26,42,.5) 38%,rgba(10,40,37,.86) 80%,#0b2926 100%)}
@@ -226,6 +227,11 @@ body.lang-ms .hero{background-image:url('bmhero.jpg')}
 .reality-transition{display:flex;align-items:center;gap:18px;margin-top:38px}
 .transition-line{flex:1;height:1px;background:rgba(255,255,255,.18)}
 .transition-text{font-family:'Poppins',sans-serif;font-weight:700;color:#9fe3d3;font-size:1.05rem}
+@media(max-width:560px){
+  .reality-transition{gap:8px}
+  .reality-transition .transition-line{min-width:6px}
+  .transition-text{font-size:.8rem;white-space:nowrap}
+}
 /* Reality reason cards */
 .reality-reasons{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:clamp(36px,4.5vw,52px);padding-top:clamp(36px,4.5vw,52px);border-top:1px solid rgba(255,255,255,.16)}
 .reason-card{background:#fff;border:1px solid rgba(255,255,255,.5);border-radius:var(--radius);padding:32px 24px;text-align:center;box-shadow:0 26px 54px -26px rgba(0,0,0,.55);transition:.3s}
