@@ -50,6 +50,7 @@ window.I18N = {
     "reality.r4.t": "Many Children Have No Protection",
     "reality.r4.d": "Many families leave their kids unprotected due to high insurance premiums.",
     "reality.transition": "That's why We Kongsi was created.",
+    "reality.disclaimer": "*Sources: insurance coverage — National Health &amp; Morbidity Survey (NHMS) &amp; LIAM; medical inflation — Aon Global Medical Trend Rates Report (Malaysia); private premiums — LIAM; hospital waiting times — published Malaysian studies. Figures are indicative and may vary by year, age and provider.",
 
     /* INTRO */
     "intro.eyebrow": "We Kongsi is Not an Insurance Provider but a",
@@ -489,6 +490,7 @@ window.I18N = {
     "reality.r4.t": "Ramai Anak-Anak Tiada Perlindungan",
     "reality.r4.d": "Ramai keluarga membiarkan anak-anak tanpa perlindungan akibat premium insurans yang tinggi.",
     "reality.transition": "Itulah sebabnya We Kongsi diwujudkan.",
+    "reality.disclaimer": "*Sumber: perlindungan insurans — Tinjauan Kebangsaan Kesihatan &amp; Morbiditi (NHMS) &amp; LIAM; inflasi perubatan — Aon Global Medical Trend Rates Report (Malaysia); premium swasta — LIAM; masa menunggu hospital — kajian tempatan yang diterbitkan. Angka adalah anggaran dan mungkin berbeza mengikut tahun, umur dan penyedia.",
     "intro.eyebrow": "We Kongsi Bukan Penyedia Insurans, Tetapi Sebuah",
     "intro.title": "Platform<br /><span class=\"gradient-text\">Perkongsian Kos Perubatan</span><br />Berasaskan Komuniti",
     "intro.p1": "We Kongsi ialah Program Perkongsian Kos Perubatan yang dipacu komuniti, direka untuk membantu ahli menguruskan perbelanjaan perubatan yang tidak dijangka melalui perkongsian yang telus dan bertanggungjawab.",
@@ -891,6 +893,7 @@ window.I18N = {
     "reality.r4.t": "许多孩子没有任何保障",
     "reality.r4.d": "因保险保费太高，许多家庭只能让孩子在没有医疗保障的情况下成长。",
     "reality.transition": "We Kongsi 将会是人民得到医疗保障的替代方案。",
+    "reality.disclaimer": "*资料来源：保险覆盖率——国家健康与发病率调查（NHMS）及 LIAM；医疗通胀——Aon 全球医疗趋势报告（马来西亚）；私人保费——LIAM；医院轮候时间——马来西亚已发表研究。数据为概略数字，可能因年份、年龄及保险公司而异。",
     "intro.eyebrow": "We Kongsi 并不是保险公司，而是一个",
     "intro.title": "社群互助<br /><span class=\"gradient-text\">医疗费用互助</span><br />平台",
     "intro.p1": "We Kongsi 是一个由社群推动的医疗费用互助计划，透过透明且负责任的互助方式，帮助会员从容应对突如其来的医疗开销。",
