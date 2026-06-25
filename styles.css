@@ -348,6 +348,7 @@ body.lang-ms .hero{background-image:url('bmhero.jpg')}
 .counter-card-hero .counter-number{font-size:clamp(3.2rem,6vw,4.4rem);color:var(--teal-2)}
 .counter-card-hero .counter-label{font-size:1.15rem;font-weight:600;color:var(--navy);margin-top:12px}
 .impact-sub{text-align:center;color:rgba(255,255,255,.6);font-size:.95rem;margin-top:36px;position:relative;z-index:2}
+.impact-subtitle{display:block;font-family:'Poppins',sans-serif;font-weight:500;font-size:clamp(.95rem,1.9vw,1.15rem);color:rgba(255,255,255,.82);margin-top:14px;line-height:1.5;letter-spacing:0}
 
 /* ====================================================
    COVERAGE
