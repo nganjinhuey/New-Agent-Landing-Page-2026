@@ -10,8 +10,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=20260623f" />
-  <script src="i18n.js?v=20260623f"></script>
+  <link rel="stylesheet" href="styles.css?v=20260629c" />
+  <script src="i18n.js?v=20260629c"></script>
 </head>
 <body>
 
@@ -516,7 +516,6 @@
   <!-- ====== SUMMARY & TIMELINE ====== -->
   <section class="pay-summary" id="pay-summary">
     <div class="container">
-      <p class="section-bridge section-bridge-light" data-i18n="pay.bridge">So what does all this actually cost you?</p>
       <div class="sec-head">
         <span class="tag" data-i18n="pay.tag">Your Costs, Made Simple</span>
         <h2 data-i18n="pay.title">So... <span class="gradient-text">What Do You Actually Pay?</span></h2>
@@ -696,6 +695,50 @@
         </div>
       </div>
       <p class="impact-sub" data-i18n="impact.sub">Every number represents a member who received support when they needed it most.</p>
+    </div>
+  </section>
+
+  <!-- ====== ELIGIBILITY ====== -->
+  <section class="elig" id="eligibility">
+    <div class="container">
+      <div class="elig-layout">
+        <div class="elig-content">
+          <div class="elig-head">
+            <span class="tag" data-i18n="elig.tag">Eligibility</span>
+            <h2 data-i18n="elig.title">Who Can <span class="gradient-text">Join?</span></h2>
+            <p class="elig-sub" data-i18n="elig.desc">We believe everyone deserves access to affordable healthcare. Becoming a We Kongsi member is easy.</p>
+          </div>
+          <div class="elig-grid">
+            <div class="elig-card animate-fade-up">
+              <div class="elig-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+              <h3 data-i18n="elig.c1.t">Malaysian Citizen</h3>
+              <p data-i18n="elig.c1.d">For Malaysian citizens residing in Malaysia.</p>
+            </div>
+            <div class="elig-card animate-fade-up" data-delay="80">
+              <div class="elig-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21a8 8 0 1 0-16 0"/><circle cx="12" cy="7" r="4"/></svg></div>
+              <h3 data-i18n="elig.c2.t">Entry Age</h3>
+              <p data-i18n="elig.c2.d">Available for individuals aged 14 days to 45 years old.</p>
+            </div>
+            <div class="elig-card animate-fade-up" data-delay="160">
+              <div class="elig-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M18.178 8c-2.026 0-3.338 1.732-4.178 3-.84 1.268-2.152 3-4.178 3a3 3 0 1 1 0-6c2.026 0 3.338 1.732 4.178 3 .84 1.268 2.152 3 4.178 3a3 3 0 1 0 0-6z"/></svg></div>
+              <h3 data-i18n="elig.c3.t">Long-Term Protection</h3>
+              <p data-i18n="elig.c3.d">Join before 45 and maintain your active membership to continue enjoying protection.</p>
+            </div>
+            <div class="elig-card animate-fade-up" data-delay="240">
+              <div class="elig-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.5-1.6 3-3.4 3-5.5A4.5 4.5 0 0 0 12 5 4.5 4.5 0 0 0 2 8.5c0 2.1 1.5 3.9 3 5.5l7 7z"/><path d="M12 8.5v5M9.5 11h5"/></svg></div>
+              <h3 data-i18n="elig.c4.t">Good Health</h3>
+              <p data-i18n="elig.c4.d">Applicants should be in generally good health at the time of joining.</p>
+            </div>
+          </div>
+        </div>
+        <div class="elig-media animate-scale-in">
+          <img src="eligibility2.jpg" alt="A Malaysian family — eligible to join We Kongsi" loading="lazy" />
+        </div>
+      </div>
+      <div class="elig-note">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+        <span data-i18n="elig.note">Eligibility is subject to the We Kongsi Program Guidelines, terms and conditions.</span>
+      </div>
     </div>
   </section>
 
@@ -923,6 +966,6 @@
     <span data-i18n="wa.float">Chat With Us</span>
   </a>
 
-  <script src="script.js?v=20260623f"></script>
+  <script src="script.js?v=20260629c"></script>
 </body>
 </html>

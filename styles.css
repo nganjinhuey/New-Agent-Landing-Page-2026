@@ -371,6 +371,26 @@ body.lang-ms .hero{background-image:url('bmhero.jpg')}
 .coverage-note{display:flex;align-items:center;gap:13px;background:var(--mint);border:1px solid #d5e9e3;border-radius:16px;padding:16px 26px;margin-top:34px;color:#3a6b65;font-size:.94rem;justify-content:center}
 .coverage-note svg{width:20px;height:20px;color:var(--teal);flex:none}
 
+/* ===== Eligibility / Who Can Join ===== */
+.elig{background:#fff}
+.elig-layout{display:grid;grid-template-columns:minmax(0,1.06fr) minmax(0,.94fr);gap:clamp(30px,4.5vw,60px);align-items:center}
+.elig-head{margin-bottom:clamp(22px,3vw,30px)}
+.elig-head h2{text-align:left}
+.elig-sub{text-align:left;max-width:480px;margin:14px 0 0;color:var(--slate);font-size:1.04rem;line-height:1.7}
+.elig-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.elig-card{position:relative;background:var(--grad-dark);border:1px solid rgba(255,255,255,.09);border-radius:18px;padding:26px 22px;text-align:left;box-shadow:var(--shadow-sm);transition:transform .3s,box-shadow .3s}
+.elig-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.elig-icon{width:52px;height:52px;border-radius:14px;background:rgba(255,255,255,.12);color:#7ed4c4;display:grid;place-items:center;margin:0 0 15px}
+.elig-icon svg{width:26px;height:26px}
+.elig-card h3{color:#fff;font-size:1.06rem;margin-bottom:8px}
+.elig-card p{color:rgba(255,255,255,.74);font-size:.9rem;line-height:1.55}
+.elig-media{align-self:stretch}
+.elig-media img{width:100%;height:100%;min-height:340px;object-fit:cover;border-radius:var(--radius-lg);box-shadow:var(--shadow)}
+.elig-note{display:flex;align-items:center;gap:11px;justify-content:center;text-align:left;max-width:760px;margin:clamp(30px,4vw,44px) auto 0;background:var(--mint-2);border:1px solid var(--line);border-radius:16px;padding:16px 22px;color:var(--ink);font-size:.9rem;line-height:1.5}
+.elig-note svg{width:20px;height:20px;color:var(--teal);flex:none}
+@media(max-width:860px){.elig-layout{grid-template-columns:1fr;gap:30px}.elig-media{order:-1}.elig-media img{min-height:240px;max-height:340px}}
+@media(max-width:480px){.elig-grid{grid-template-columns:1fr}}
+
 /* ====================================================
    COB
    ==================================================== */

@@ -446,6 +446,18 @@ window.I18N = {
     "sa.bridge": "Wondering how your money is handled? Here's the behind-the-scenes.",
 
     /* FLOATING */
+    "elig.tag": "Eligibility",
+    "elig.title": "Who Can <span class=\"gradient-text\">Join?</span>",
+    "elig.desc": "We believe everyone deserves access to affordable healthcare. Becoming a We Kongsi member is easy.",
+    "elig.c1.t": "Malaysian Citizen",
+    "elig.c1.d": "For Malaysian citizens residing in Malaysia.",
+    "elig.c2.t": "Entry Age",
+    "elig.c2.d": "Available for individuals aged 14 days to 45 years old.",
+    "elig.c3.t": "Long-Term Protection",
+    "elig.c3.d": "Join before 45 and maintain your active membership to continue enjoying protection.",
+    "elig.c4.t": "Good Health",
+    "elig.c4.d": "Applicants should be in generally good health at the time of joining.",
+    "elig.note": "Eligibility is subject to the We Kongsi Program Guidelines, terms and conditions.",
     "wa.float": "Chat With Us"
   },
 
@@ -850,6 +862,18 @@ window.I18N = {
     "pay.bridge": "Jadi, Berapa Yang Anda Perlu Bayar?",
     "plans.bridge": "Kini tiba masanya memilih pelan yang paling sesuai untuk anda.",
     "sa.bridge": "Tertanya-tanya bagaimana wang anda diuruskan? Inilah di sebalik tabir.",
+    "elig.tag": "Kelayakan",
+    "elig.title": "Kelayakan Menyertai <span class=\"gradient-text\">We Kongsi</span>",
+    "elig.desc": "Syarat penyertaan yang mudah untuk semua rakyat Malaysia.",
+    "elig.c1.t": "Warganegara Malaysia",
+    "elig.c1.d": "Terbuka kepada warganegara Malaysia yang menetap di Malaysia.",
+    "elig.c2.t": "Umur Penyertaan",
+    "elig.c2.d": "14 hari hingga 45 tahun.",
+    "elig.c3.t": "Perlindungan Seumur Hidup",
+    "elig.c3.d": "Sertai sebelum umur 45 tahun dan nikmati perlindungan selagi keahlian anda aktif.",
+    "elig.c4.t": "Kesihatan Yang Baik",
+    "elig.c4.d": "Pemohon hendaklah berada dalam keadaan sihat semasa menyertai program.",
+    "elig.note": "Kelayakan tertakluk kepada Garis Panduan Program serta terma dan syarat We Kongsi.",
     "wa.float": "Hubungi Kami"
   },
   zh: {
@@ -1253,6 +1277,18 @@ window.I18N = {
     "pay.bridge": "那么，这一切到底要花您多少钱？",
     "plans.bridge": "喜欢吗？选择您偏好的付款方式。",
     "sa.bridge": "想知道您的钱是怎么管理的？一起来看看幕后。",
+    "elig.tag": "加入资格",
+    "elig.title": "加入 We Kongsi <span class=\"gradient-text\">很简单</span>",
+    "elig.desc": "只需符合以下条件，即可加入 We Kongsi，与大家一起互助分担医疗负担。",
+    "elig.c1.t": "马来西亚公民",
+    "elig.c1.d": "持有马来西亚国籍，并居住于马来西亚。",
+    "elig.c2.t": "加入年龄",
+    "elig.c2.d": "14 天至 45 岁皆可加入。",
+    "elig.c3.t": "长期保障",
+    "elig.c3.d": "45 岁前加入，并持续维持有效会员资格，即可持续享有保障。",
+    "elig.c4.t": "健康要求",
+    "elig.c4.d": "加入时健康状况良好。",
+    "elig.note": "是否符合资格须依据 We Kongsi 计划指南及条款与条件而定。",
     "wa.float": "与我们对话"
   }
 };
